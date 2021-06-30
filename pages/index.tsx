@@ -12,7 +12,7 @@ import projects from "../public/projects.json";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
-export default function Home({ projects: any }) {
+export default function Home({ projects }: any) {
   // https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
   return (
     <>
@@ -33,7 +33,7 @@ export default function Home({ projects: any }) {
   );
 }
 
-export async function getStaticProps({ params:any }) {
+export async function getStaticProps({ params }: any) {
   const data = projects;
   return { props: { projects: data } };
 }

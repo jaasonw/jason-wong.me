@@ -20,7 +20,7 @@ interface Project {
   demoUrl: string;
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project }: any) {
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
@@ -53,7 +53,7 @@ function ProjectCard({ project }) {
               </a>
             </Box>
           </Flex>
-          {project.technology.split(",").map((e) => {
+          {project.technology.split(",").map((e: string) => {
             let icon = <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>;
             let color = "gray";
             switch (e.toLowerCase()) {
@@ -95,7 +95,7 @@ function ProjectCard({ project }) {
   );
 }
 
-export default function Projects({ projects }) {
+export default function Projects({ projects }: any) {
   return (
     <Box>
       <FadeInOnScroll>
@@ -110,7 +110,7 @@ export default function Projects({ projects }) {
         alignItems="center"
         flexWrap="wrap"
       >
-        {projects.map((p) => {
+        {projects.map((p: Project) => {
           return <ProjectCard key={p.name} project={p}></ProjectCard>;
         })}
       </Flex>
