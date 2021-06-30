@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "export": "next build && next export",
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "npm run export",
+    "start": "next start"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.4",
