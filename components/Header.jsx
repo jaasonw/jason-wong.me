@@ -40,22 +40,30 @@ export default function Header() {
           }}
         >
           <Box paddingLeft="1%" maxWidth="900px">
-            <Text color="#FFBE0B" fontSize="4xl" lineHeight="0">
+            <Text
+              color="#FFBE0B"
+              fontSize={["2xl", "2xl", "3xl", "4xl"]}
+              lineHeight="0"
+            >
               Hey there! My name is
             </Text>
             <motion.div variants={item}>
-              <Heading color="#FFFFFC" fontSize="9xl">
+              <Heading color="#FFFFFC" fontSize={["8xl", "8xl", "8xl", "9xl"]}>
                 Jason Wong
               </Heading>
             </motion.div>
             <motion.div variants={item}>
-              <Text color="#F7F7FF" fontSize="3xl">
+              <Text color="#F7F7FF" fontSize={["2xl", "2xl", "3xl", "3xl"]}>
                 Frontend Web Developer and Software Engineering student with an
                 interest in data analysis and a casual anime enjoyer
               </Text>
             </motion.div>
             <motion.div variants={item}>
-              <Text color="#F7F7FF" fontSize="2xl" paddingTop="3%">
+              <Text
+                color="#F7F7FF"
+                fontSize={["1xl", "1xl", "2xl", "2xl"]}
+                paddingTop="3%"
+              >
                 🎓 Currently studying at California State University, Fullerton
               </Text>
             </motion.div>

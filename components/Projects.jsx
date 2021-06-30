@@ -21,27 +21,32 @@ import FadeInOnScroll from "./FadeInOnScroll";
 // }
 
 function ProjectCard({ project }) {
-  const cardWidth = "500px";
+  const widths = ["400px", "400px", "500px", "500px"];
+  const imageHeights = ["150px", "150px", "200px", "200px"];
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
         <Image
-          width={cardWidth}
-          height="200px"
+          width={widths}
+          height={imageHeights}
           borderTopRadius="10px"
           src={project.imageUrl}
         ></Image>
         <Divider></Divider>
-        <Box width={cardWidth} height="180px" padding="8px">
+        <Box width={widths} minHeight="180px" padding="8px">
           <Flex justifyContent="space-between">
-            <Heading as="h6" fontSize="xl" lineHeight="40px">
+            <Heading
+              as="h6"
+              fontSize={["md", "md", "xl", "xl"]}
+              lineHeight="40px"
+            >
               {project.name}
             </Heading>
             <Box>
               {project.demoUrl != "" ? (
                 <a href={project.demoUrl}>
                   <FontAwesomeIcon
-                    size="2x"
+                    size="1x"
                     icon={faExternalLinkAlt}
                   ></FontAwesomeIcon>
                 </a>
@@ -50,7 +55,7 @@ function ProjectCard({ project }) {
               )}
               {"  "}
               <a href={project.url}>
-                <FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon>
+                <FontAwesomeIcon size="1x" icon={faGithub}></FontAwesomeIcon>
               </a>
             </Box>
           </Flex>
