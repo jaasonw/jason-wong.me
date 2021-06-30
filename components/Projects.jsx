@@ -21,17 +21,18 @@ import FadeInOnScroll from "./FadeInOnScroll";
 // }
 
 function ProjectCard({ project }) {
+  const cardWidth = "500px";
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
         <Image
-          width="700px"
-          height="300px"
+          width={cardWidth}
+          height="200px"
           borderTopRadius="10px"
           src={project.imageUrl}
         ></Image>
         <Divider></Divider>
-        <Box width="700px" height="180px" padding="8px">
+        <Box width={cardWidth} height="180px" padding="8px">
           <Flex justifyContent="space-between">
             <Heading as="h6" fontSize="xl" lineHeight="40px">
               {project.name}
