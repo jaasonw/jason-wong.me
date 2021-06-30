@@ -11,16 +11,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import FadeInOnScroll from "./FadeInOnScroll";
 
-interface Project {
-  name: string;
-  description: string;
-  technology: string;
-  imageUrl: string;
-  url: string;
-  demoUrl: string;
-}
+// interface Project {
+//   name: string;
+//   description: string;
+//   technology: string;
+//   imageUrl: string;
+//   url: string;
+//   demoUrl: string;
+// }
 
-function ProjectCard({ project }: any) {
+function ProjectCard({ project }) {
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
@@ -53,7 +53,7 @@ function ProjectCard({ project }: any) {
               </a>
             </Box>
           </Flex>
-          {project.technology.split(",").map((e: string) => {
+          {project.technology.split(",").map((e) => {
             let icon = <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>;
             let color = "gray";
             switch (e.toLowerCase()) {
@@ -95,7 +95,7 @@ function ProjectCard({ project }: any) {
   );
 }
 
-export default function Projects({ projects }: any) {
+export default function Projects({ projects }) {
   return (
     <Box>
       <FadeInOnScroll>
@@ -110,7 +110,7 @@ export default function Projects({ projects }: any) {
         alignItems="center"
         flexWrap="wrap"
       >
-        {projects.map((p: Project) => {
+        {projects.map((p) => {
           return <ProjectCard key={p.name} project={p}></ProjectCard>;
         })}
       </Flex>

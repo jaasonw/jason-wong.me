@@ -14,6 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "pages/_app.jsx", "components/About.jsx", "components/Contact.jsx", "components/FadeInOnScroll.jsx", "components/Header.jsx", "components/Projects.jsx", "components/theme.js"],
   "exclude": ["node_modules"]
 }

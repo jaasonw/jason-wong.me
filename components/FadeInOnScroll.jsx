@@ -2,11 +2,8 @@ import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-interface Props {
-  children?: React.ReactNode;
-}
 
-export default function FadeInOnScroll(props: Props) {
+export default function FadeInOnScroll(props) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
