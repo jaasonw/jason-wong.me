@@ -18,11 +18,16 @@ export default function Home({ projects: any }) {
     <>
       <Head>
         <title>Welcome to Jason's Portfolio</title>
-        <meta name="description" content="Jason's Portfolio" />
+        <meta
+          property="og:title"
+          content="Welcome to Jason's Portfolio"
+          key="title"
+        />
+        <meta property="og:image" content={"https://i.imgur.com/v6izSs0.png"} />
       </Head>
-      <Header/>
-      <About/>
-      <Projects projects = {projects}/>
+      <Header />
+      <About />
+      <Projects projects={projects} />
       <Contact></Contact>
     </>
   );
