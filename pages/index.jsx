@@ -13,14 +13,14 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
 export default function Home({ projects }) {
-  // https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+  // https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff
   return (
     <>
       <Head>
         <title>Welcome to Jason&apos;s Portfolio</title>
         <meta
           property="og:title"
-          content="Welcome to Jason&apos;s Portfolio"
+          content="Welcome to Jason's Portfolio"
           key="title"
         />
         <meta property="og:image" content={"https://i.imgur.com/v6izSs0.png"} />
@@ -28,7 +28,7 @@ export default function Home({ projects }) {
       <Header />
       <About />
       <Projects projects={projects} />
-      <Contact/>
+      <Contact />
     </>
   );
 }
