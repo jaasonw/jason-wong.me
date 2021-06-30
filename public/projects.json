@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Spotify Seasonal Playlist Sorter",
+    "description": "A web app that automatically places a users liked songs into playlists grouped by seasons every 10 minutes, for instance, a \"spring 2020\" playlist",
+    "technology": "Python,Flask,Spotify API,Bootstrap",
+    "imageUrl": "spotify.png",
+    "url": "https://github.com/jaasonw/spotify-new-music-sorter",
+    "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
+  },
+  {
+    "name": "APPE Regional Draft Analysis",
+    "description": "A program I wrote to run draft pick simulations to forcast forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
+    "technology": "Python",
+    "imageUrl": "appe_sim.png",
+    "url": "https://github.com/jaasonw/appe-simulation",
+    "demoUrl": ""
+  },
+  {
+    "name": "SQLite Clone",
+    "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system",
+    "technology": "C++",
+    "imageUrl": "sqlite.png",
+    "url": "https://github.com/jaasonw/Database",
+    "demoUrl": ""
+  },
+  {
+    "name": "Graphing Calculator",
+    "description": "A graphing calculator application capable of graphing 2d cartesian equations",
+    "technology": "C++,SFML",
+    "imageUrl": "graph.png",
+    "url": "https://github.com/jaasonw/graphing-calculator",
+    "demoUrl": ""
+  },
+  {
+    "name": "Sushi Shop",
+    "description": "A sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order",
+    "technology": "Java,JavaFx",
+    "imageUrl": "sushi.png",
+    "url": "https://github.com/jaasonw/sushi_shop",
+    "demoUrl": ""
+  }
+]
