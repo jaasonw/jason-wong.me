@@ -13,9 +13,9 @@ export default function Contact() {
       <FadeInOnScroll>
         <Container fontSize="xl" maxW="container.lg" textAlign="center">
           <Heading color="#FFBE0B">Contact me</Heading>
-          Interested in hiring me or have an idea to pitch? I'm currently open
+          Interested in hiring me or have an idea to pitch? I&apos;m currently open
           to work as a frontend developer and looking for opportunities to
-          diversify my portfolio. Let's get in touch and discuss your projects.
+          diversify my portfolio. Let&apos;s get in touch and discuss your projects.
           <br></br>
           <br></br>
           <Button
