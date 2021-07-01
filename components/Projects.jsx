@@ -21,8 +21,8 @@ import FadeInOnScroll from "./FadeInOnScroll";
 // }
 
 function ProjectCard({ project }) {
-  const widths = ["400px", "400px", "500px", "500px"];
-  const imageHeights = ["150px", "150px", "200px", "200px"];
+  const widths = ["300px", "400px", "500px", "500px"];
+  const imageHeights = ["120px", "150px", "200px", "200px"];
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
@@ -34,10 +34,10 @@ function ProjectCard({ project }) {
         ></Image>
         <Divider></Divider>
         <Box width={widths} minHeight="180px" padding="8px">
-          <Flex justifyContent="space-between">
+          <Flex justifyContent="space-between" alignContent="center">
             <Heading
               as="h6"
-              fontSize={["md", "md", "xl", "xl"]}
+              fontSize={["sm", "md", "xl", "xl"]}
               lineHeight="40px"
             >
               {project.name}
