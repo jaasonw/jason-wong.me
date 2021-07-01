@@ -94,7 +94,9 @@ function ProjectCard({ project }) {
             );
           })}
           <Divider></Divider>
-          <Box color="gray">{project.description}</Box>
+          <Box color="gray" fontSize={["sm", "md", "md", "md"]}>
+            {project.description}
+          </Box>
         </Box>
       </Box>
     </FadeInOnScroll>
