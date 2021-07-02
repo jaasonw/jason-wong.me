@@ -19,6 +19,7 @@ export default function Contact() {
           <br></br>
           <br></br>
           <Button
+            margin="5px"
             leftIcon={<FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>}
             bg="#004ECC"
             _hover={{ bg: "#002766" }}
@@ -27,8 +28,9 @@ export default function Contact() {
             onClick={() => router.push("https://www.linkedin.com/in/wayson/")}
           >
             LinkedIn
-          </Button>{" "}
+          </Button>
           <Button
+            margin="5px"
             leftIcon={<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>}
             bg="#004ECC"
             _hover={{ bg: "#002766" }}
@@ -37,8 +39,9 @@ export default function Contact() {
             onClick={() => router.push("https://github.com/jaasonw")}
           >
             Github
-          </Button>{" "}
+          </Button>
           <Button
+            margin="5px"
             leftIcon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
             bg="#004ECC"
             _hover={{ bg: "#002766" }}
@@ -49,8 +52,9 @@ export default function Contact() {
             }
           >
             Email
-          </Button>{" "}
+          </Button>
           <Button
+            margin="5px"
             leftIcon={<FontAwesomeIcon icon={faFileAlt}></FontAwesomeIcon>}
             bg="#004ECC"
             _hover={{ bg: "#002766" }}
