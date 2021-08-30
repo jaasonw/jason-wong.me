@@ -1,11 +1,27 @@
 [
   {
+    "name": "CSUFACS Website",
+    "description": "The website for the Association of Chinese Students at CSUF",
+    "technology": "Javascript,React",
+    "imageUrl": "acs.png",
+    "url": "https://github.com/CSUFACS/website",
+    "demoUrl": "https://csufacs.netlify.app/"
+  },
+  {
     "name": "Spotify Seasonal Playlist Sorter",
     "description": "A web app that automatically places a users liked songs into playlists grouped by seasons every 10 minutes, for instance, a \"spring 2020\" playlist",
     "technology": "Python,Flask,Spotify API,Bootstrap",
     "imageUrl": "spotify.png",
     "url": "https://github.com/jaasonw/spotify-new-music-sorter",
     "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
+  },
+  {
+    "name": "osu! Collection Exporter",
+    "description": "A web app that converts an osu! collections database into a list of beatmap links",
+    "technology": "Javascript",
+    "imageUrl": "collection_exporter.png",
+    "url": "https://github.com/jaasonw/osu-collection-exporter",
+    "demoUrl": "https://jaasonw.github.io/osu-collection-exporter/"
   },
   {
     "name": "APPE Regional Draft Analysis",
@@ -38,5 +54,13 @@
     "imageUrl": "sushi.png",
     "url": "https://github.com/jaasonw/sushi_shop",
     "demoUrl": ""
+  },
+  {
+    "name": "osu! Stream Speed Benchmark",
+    "description": "The original web based stream speed benchmark. By far my most popular project topping the Google search results 110 upvotes on Reddit",
+    "technology": "Javascript, Jquery",
+    "imageUrl": "stream_speed.png",
+    "url": "https://github.com/jaasonw/osuStreamspeed.js",
+    "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
   }
 ]
