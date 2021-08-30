@@ -3,7 +3,9 @@ import {
   faBootstrap,
   faGithub,
   faJava,
+  faJs,
   faPython,
+  faReact,
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -78,6 +80,14 @@ function ProjectCard({ project }) {
               case "java":
                 color = "yellow";
                 icon = <FontAwesomeIcon icon={faJava}></FontAwesomeIcon>;
+                break;
+              case "javascript":
+                color = "yellow";
+                icon = <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>;
+                break;
+              case "react":
+                color = "blue";
+                icon = <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>;
                 break;
             }
             return (
