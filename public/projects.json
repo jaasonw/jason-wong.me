@@ -57,7 +57,7 @@
   },
   {
     "name": "osu! Stream Speed Benchmark",
-    "description": "The original web based stream speed benchmark. By far my most popular project topping the Google search results 110 upvotes on Reddit",
+    "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
     "technology": "Javascript, Jquery",
     "imageUrl": "stream_speed.png",
     "url": "https://github.com/jaasonw/osuStreamspeed.js",
