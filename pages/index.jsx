@@ -9,10 +9,12 @@ import React from "react";
 import About from "../components/About";
 
 import projects from "../public/projects.json";
+import skills from "../public/skills.json";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
-export default function Home({ projects }) {
+export default function Home(props) {
   // https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff
   return (
     <>
@@ -27,13 +29,15 @@ export default function Home({ projects }) {
       </Head>
       <Header />
       <About />
-      <Projects projects={projects} />
+      <Projects projects={props.projects} />
+      <Skills skills={props.skills} />
       <Contact />
     </>
   );
 }
 
 export async function getStaticProps({ params }) {
-  const data = projects;
-  return { props: { projects: data } };
+  const _projects = projects;
+  const _skills = skills;
+  return { props: { projects: _projects, skills: _skills } };
 }
