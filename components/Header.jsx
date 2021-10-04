@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
 export default function Header() {
@@ -64,7 +64,12 @@ export default function Header() {
                 fontSize={["lg", "1xl", "2xl", "2xl"]}
                 paddingTop="3%"
               >
-                🎓 Currently studying at California State University, Fullerton
+                🎓 Studying at California State University, Fullerton
+                <br />
+                🚀 Currently frontend developing at{" "}
+                <Link href="https://www.tuffyhacks.com/" color="#FFBE0B">
+                  Tuffyhacks
+                </Link>
               </Text>
             </motion.div>
           </Box>
