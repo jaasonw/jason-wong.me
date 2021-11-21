@@ -24,6 +24,14 @@
     "demoUrl": "https://jaasonw.github.io/osu-collection-exporter/"
   },
   {
+    "name": "osu! Stream Speed Benchmark",
+    "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
+    "technology": "Javascript, Jquery",
+    "imageUrl": "stream_speed.png",
+    "url": "https://github.com/jaasonw/osuStreamspeed.js",
+    "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
+  },
+  {
     "name": "APPE Regional Draft Analysis",
     "description": "A program I wrote to run draft pick simulations to forcast forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
     "technology": "Python",
@@ -54,13 +62,5 @@
     "imageUrl": "sushi.png",
     "url": "https://github.com/jaasonw/sushi_shop",
     "demoUrl": ""
-  },
-  {
-    "name": "osu! Stream Speed Benchmark",
-    "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
-    "technology": "Javascript, Jquery",
-    "imageUrl": "stream_speed.png",
-    "url": "https://github.com/jaasonw/osuStreamspeed.js",
-    "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
   }
 ]
