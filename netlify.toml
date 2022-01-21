@@ -10,3 +10,6 @@
 [[redirects]]
   from = "/animelist"
   to = "https://anilist.co/user/wayson/"
+[[redirects]]
+  from = "/resume"
+  to = "https://jaasonw.github.io/files/resume.pdf"
