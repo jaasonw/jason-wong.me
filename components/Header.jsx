@@ -54,8 +54,8 @@ export default function Header() {
             </motion.div>
             <motion.div variants={item}>
               <Text color="#F7F7FF" fontSize={["xl", "2xl", "3xl", "3xl"]}>
-                Frontend Web Developer and Software Engineering student with an
-                interest in data analysis and a casual anime enjoyer
+                Frontend Web Developer, Software Engineering student, and a
+                casual anime enjoyer
               </Text>
             </motion.div>
             <motion.div variants={item}>
@@ -78,4 +78,3 @@ export default function Header() {
     </Box>
   );
 }
-
