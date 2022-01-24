@@ -31,3 +31,9 @@
 [[redirects]]
   from = "/donate"
   to = "https://ko-fi.com/wayson"
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/channel/UCpHV53n_jlKR4gH3spN8alw"
+[[redirects]]
+  from = "/youtubealt"
+  to = "https://www.youtube.com/channel/UC5zqtuav_Mcu5Jqc5BpRhXA"
