@@ -1,5 +1,13 @@
 [
   {
+    "name": "Tuffyhacks Website",
+    "description": "The landing page and hacker portal for Tuffyhacks 2022",
+    "technology": "Javascript,React",
+    "imageUrl": "tuffyhacks.png",
+    "url": "https://github.com/jaasonw/tuffyhacks.com",
+    "demoUrl": "https://www.tuffyhacks.com/"
+  },
+  {
     "name": "CSUFACS Website",
     "description": "The website for the Association of Chinese Students at CSUF",
     "technology": "Javascript,React",
