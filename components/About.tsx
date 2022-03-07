@@ -13,8 +13,8 @@ export default function Header() {
         >
           <Heading color="#3A86FF">About me</Heading>
           Hey there, I&apos;m Jason and I&apos;m a Los Angeles based web
-          developer working towards a Bachelor&apos;s in computer science with a
-          minor in mathematics at Cal State Fullerton.
+          developer working towards a Bachelor&apos;s in Computer Science with a
+          minor in Mathematics at Cal State Fullerton.
           <br></br>
           <br></br>I started programming in 2013 when I really wanted to make
           mods for Minecraft and continued pursuing it, bringing us to where we
