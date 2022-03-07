@@ -66,9 +66,9 @@ export default function Header() {
               >
                 🎓 Studying at California State University, Fullerton
                 <br />
-                🚀 Currently frontend developing at{" "}
-                <Link href="https://www.tuffyhacks.com/" color="#FFBE0B">
-                  Tuffyhacks
+                🚀 Incoming Software Engineering Intern at{" "}
+                <Link href="https://www.amazon.com/" color="#FFBE0B">
+                  Amazon
                 </Link>
               </Text>
             </motion.div>

@@ -59,7 +59,7 @@ export default function Contact() {
           <br></br>
           Designed and built by Jason Wong
           <br></br>
-          Copyright 2021
+          Copyright 2022
           <br></br>
           Built with{" "}
           <Text as="a" color="#FFBE0B">
