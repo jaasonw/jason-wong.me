@@ -29,7 +29,7 @@ interface Project {
 }
 
 export function ProjectCard({ project }) {
-  const widths = "clamp(300px, 80vw, 480px)";
+  const widths = "clamp(300px, 80vw, 410px)";
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
@@ -41,7 +41,7 @@ export function ProjectCard({ project }) {
           src={project.imageUrl}
         ></Image>
         <Divider></Divider>
-        <Box width={widths} minHeight="180px" padding="8px">
+        <Box width={widths} minHeight="190px" padding="8px">
           <Flex justifyContent="space-between" alignItems="center">
             <Heading
               as="h6"
