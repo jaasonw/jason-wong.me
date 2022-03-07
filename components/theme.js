@@ -12,5 +12,8 @@ const theme = extendTheme({
     heading: "Montserrat",
     body: "Lato",
   },
+  colors: {
+    postgres: "#336791"
+  }
 });
 export default theme;

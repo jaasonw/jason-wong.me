@@ -4,7 +4,7 @@ import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/dist/client/router";
 import React from "react";
-import FadeInOnScroll from "./FadeInOnScroll";
+import { FadeInOnScroll } from "./FadeInOnScroll";
 
 function ContactButton({ icon, text, link }) {
   const router = useRouter();
@@ -32,7 +32,7 @@ export default function Contact() {
           Interested in hiring me or have an idea to pitch? I&apos;m currently
           open to work as a frontend developer and looking for opportunities to
           diversify my portfolio. Let&apos;s get in touch and discuss your
-          projects.
+          project ideas.
           <br></br>
           <br></br>
           <ContactButton

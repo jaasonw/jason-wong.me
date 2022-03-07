@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
-export default function Header() {
+export function Header() {
   const greeting = {
     visible: {
       opacity: 1,
@@ -42,18 +42,18 @@ export default function Header() {
           <Box paddingLeft="1%" maxWidth="900px">
             <Text
               color="#FFBE0B"
-              fontSize={["1xl", "2xl", "3xl", "4xl"]}
+              fontSize="clamp(25px, 2.5vw, 40px)"
               lineHeight="0"
             >
               Hey there! My name is
             </Text>
             <motion.div variants={item}>
-              <Heading color="#FFFFFC" fontSize={["6xl", "8xl", "8xl", "9xl"]}>
+              <Heading color="#FFFFFC" fontSize="clamp(80px, 7vw, 120px)">
                 Jason Wong
               </Heading>
             </motion.div>
             <motion.div variants={item}>
-              <Text color="#F7F7FF" fontSize={["xl", "2xl", "3xl", "3xl"]}>
+              <Text color="#F7F7FF" fontSize="clamp(20px, 1.5vw, 30px)">
                 Frontend Web Developer, Software Engineering student, and a
                 casual anime enjoyer
               </Text>
@@ -61,7 +61,7 @@ export default function Header() {
             <motion.div variants={item}>
               <Text
                 color="#F7F7FF"
-                fontSize={["lg", "1xl", "2xl", "2xl"]}
+                fontSize="clamp(18px, 1.5vw, 25px)"
                 paddingTop="3%"
               >
                 🎓 Studying at California State University, Fullerton

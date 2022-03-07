@@ -24,6 +24,7 @@
     "react-intersection-observer": "^8.32.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "@types/react": "17.0.11",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",

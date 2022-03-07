@@ -1,13 +1,13 @@
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
-import FadeInOnScroll from "./FadeInOnScroll";
+import { FadeInOnScroll } from "./FadeInOnScroll";
 
 export default function Header() {
   return (
     <Flex w="100%" p={10} justifyContent="center">
       <FadeInOnScroll>
         <Container
-          fontSize={["md", "md", "xl", "xl"]}
+          fontSize="clamp(16px, 1.3vw, 20px)"
           maxW="container.lg"
           textAlign="center"
         >
@@ -25,8 +25,8 @@ export default function Header() {
           from scratch and I love making ideas come to life.
           <br></br>
           <br></br>
-          During my free time I enjoy gaming with friends and binge watching
-          animes and kdramas.
+          During my free time I enjoy gaming with friends, being a photographer,
+          and binge watching animes/kdramas.
           <br></br>
           <br></br>
         </Container>

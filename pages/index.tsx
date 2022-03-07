@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-import Header from "../components/Header";
+import {Header} from "../components/Header";
 import Head from "next/head";
 import Script from "next/script";
 import React from "react";

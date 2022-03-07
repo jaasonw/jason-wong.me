@@ -1,8 +1,8 @@
 [
   {
     "name": "Tuffyhacks Website",
-    "description": "The landing page and hacker portal for Tuffyhacks 2022",
-    "technology": "Javascript,React",
+    "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation. Uses a PostgreSQL database for user and team data and Firebase for authentication and analytics",
+    "technology": "Javascript,React,PostgreSQL,Firebase",
     "imageUrl": "tuffyhacks.png",
     "url": "https://github.com/jaasonw/tuffyhacks.com",
     "demoUrl": "https://www.tuffyhacks.com/"
@@ -25,7 +25,7 @@
   },
   {
     "name": "osu! Collection Exporter",
-    "description": "A web app that converts an osu! collections database into a list of beatmap links",
+    "description": "A web app that converts an osu! collections database into a list of beatmap links. Uses an in house made Javascript library to parse beatmap binary data",
     "technology": "Javascript",
     "imageUrl": "collection_exporter.png",
     "url": "https://github.com/jaasonw/osu-collection-exporter",
@@ -34,7 +34,7 @@
   {
     "name": "osu! Stream Speed Benchmark",
     "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
-    "technology": "Javascript, Jquery",
+    "technology": "Javascript, JQuery",
     "imageUrl": "stream_speed.png",
     "url": "https://github.com/jaasonw/osuStreamspeed.js",
     "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
