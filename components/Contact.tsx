@@ -46,7 +46,7 @@ export default function Contact() {
             link="https://github.com/jaasonw"
           ></ContactButton>
           <ContactButton
-            icon={<FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>}
+            icon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
             text="Email"
             link="mailto:jayywong92@gmail.com"
           ></ContactButton>
