@@ -1,4 +1,14 @@
-import { Badge, Box, Divider, Flex, Heading, Image } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Button,
+  Center,
+  chakra,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+} from "@chakra-ui/react";
 import {
   faBootstrap,
   faGithub,
@@ -16,6 +26,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import router from "next/router";
 import React from "react";
 import { FadeInOnScroll } from "./FadeInOnScroll";
 // import { FadeInOnScroll } from "./FadeInOnScroll";
@@ -28,18 +39,52 @@ interface Project {
   demoUrl: string;
 }
 
+const ProjectButton = chakra(({children, href}) => {
+  return <Button colorScheme={"whiteAlpha"} variant="outline" onClick={() => router.push(href)}>
+    {children}
+  </Button>
+})
+
 export function ProjectCard({ project }) {
   const widths = "clamp(300px, 80vw, 410px)";
   return (
     <FadeInOnScroll>
       <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
-        <Image
-          style={{ "aspectRatio": "16/7" }}
-          width={widths}
-          alt={project.name}
-          borderTopRadius="10px"
-          src={project.imageUrl}
-        ></Image>
+        <Box>
+          <Image
+            style={{ aspectRatio: "16/7" }}
+            width={widths}
+            alt={project.name}
+            borderTopRadius="10px"
+            src={project.imageUrl}
+          ></Image>
+          <Center
+            margin="6px"
+            style={{ aspectRatio: "16/7" }}
+            width={widths}
+            borderTopRadius="10px"
+            backgroundColor="black"
+            position="absolute"
+            top="0"
+            left="0"
+            opacity="0"
+            transition="all 0.2s ease-out"
+            _hover={{ opacity: 0.8, transition: "all 0.2s ease-in" }}
+          >
+            <Flex width="50%" justify="space-around" gap="2em">
+              {project.demoUrl != "" ? (
+                <ProjectButton href={project.demoUrl} >
+                  Demo
+                </ProjectButton>
+              ) : (
+                <></>
+              )}
+              <ProjectButton href={project.url}>
+                Source
+              </ProjectButton>
+            </Flex>
+          </Center>
+        </Box>
         <Divider></Divider>
         <Box width={widths} minHeight="190px" padding="8px">
           <Flex justifyContent="space-between" alignItems="center">
@@ -50,22 +95,6 @@ export function ProjectCard({ project }) {
             >
               {project.name}
             </Heading>
-            <Box>
-              {project.demoUrl != "" ? (
-                <a href={project.demoUrl}>
-                  <FontAwesomeIcon
-                    size="1x"
-                    icon={faExternalLinkAlt}
-                  ></FontAwesomeIcon>
-                </a>
-              ) : (
-                <></>
-              )}
-              {"  "}
-              <a href={project.url}>
-                <FontAwesomeIcon size="1x" icon={faGithub}></FontAwesomeIcon>
-              </a>
-            </Box>
           </Flex>
           <Flex wrap="wrap">
             {project.technology.split(",").map((e) => {

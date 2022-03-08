@@ -8,8 +8,8 @@ export function Header() {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
+        staggerChildren: 0.2,
+        delayChildren: 0.4,
       },
     },
     hidden: {
@@ -36,7 +36,7 @@ export function Header() {
           animate="visible"
           variants={greeting}
           transition={{
-            duration: 0.1,
+            duration: 0.2,
           }}
         >
           <Box paddingLeft="1%" maxWidth="900px">
