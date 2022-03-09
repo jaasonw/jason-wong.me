@@ -54,8 +54,8 @@ export function Header() {
             </motion.div>
             <motion.div variants={item}>
               <Text color="#F7F7FF" fontSize="clamp(20px, 1.5vw, 30px)">
-                Frontend Web Developer, Software Engineering student, and a
-                casual anime enjoyer
+                Frontend Web Developer, Software Engineering student, and
+                sometimes a photographer
               </Text>
             </motion.div>
             <motion.div variants={item}>

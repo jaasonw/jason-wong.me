@@ -1,4 +1,4 @@
-import { Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -62,13 +62,13 @@ export default function Contact() {
           Copyright 2022
           <br></br>
           Built with{" "}
-          <Text as="a" color="#FFBE0B">
+          <Link as="a" color="#FFBE0B" href="https://nextjs.org/">
             Next.js
-          </Text>{" "}
+          </Link>{" "}
           &{" "}
-          <Text as="a" color="#FFBE0B">
+          <Link as="a" color="#FFBE0B" href="https://chakra-ui.com/">
             ChakraUI
-          </Text>
+          </Link>
         </Container>
       </FadeInOnScroll>
     </Flex>

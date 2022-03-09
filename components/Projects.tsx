@@ -1,4 +1,12 @@
-import { Badge, Box, Divider, Flex, Heading, Image } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Container,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+} from "@chakra-ui/react";
 import {
   faBootstrap,
   faGithub,
@@ -27,17 +35,19 @@ export default function Projects({ projects }) {
           Project Showcase
         </Heading>
       </FadeInOnScroll>
-      <Flex
-        w="100%"
-        p={10}
-        justifyContent="center"
-        alignItems="center"
-        flexWrap="wrap"
-      >
-        {projects.map((p) => {
-          return <ProjectCard key={p.name} project={p}></ProjectCard>;
-        })}
-      </Flex>
+      <Container maxW="95rem">
+        <Flex
+          w="100%"
+          // p={10}
+          justifyContent="center"
+          alignItems="center"
+          flexWrap="wrap"
+        >
+          {projects.map((p) => {
+            return <ProjectCard key={p.name} project={p}></ProjectCard>;
+          })}
+        </Flex>
+      </Container>
     </Box>
   );
 }

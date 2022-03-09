@@ -6,14 +6,14 @@ const theme = extendTheme({
         bg: "white",
         // color: "white",
       },
+      a: {
+        color: "#3A86FF"
+      }
     },
   },
   fonts: {
     heading: "Montserrat",
     body: "Lato",
-  },
-  colors: {
-    postgres: "#336791"
   }
 });
 export default theme;
