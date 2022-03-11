@@ -18,19 +18,13 @@ import {
   faReact,
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCode,
-  faDatabase,
-  faExternalLinkAlt,
-  faFire,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import router from "next/router";
 import React from "react";
 import { FadeInOnScroll } from "./FadeInOnScroll";
-// import { FadeInOnScroll } from "./FadeInOnScroll";
-interface Project {
+export interface Project {
   name: string;
   description: string;
   technology: string;
@@ -39,29 +33,49 @@ interface Project {
   demoUrl: string;
 }
 
-const ProjectButton = chakra(({children, href}) => {
-  return <Button colorScheme={"whiteAlpha"} variant="outline" onClick={() => router.push(href)}>
-    {children}
-  </Button>
-})
+const ProjectButton = chakra(({ children, href }) => {
+  return (
+    <Button
+      colorScheme={"whiteAlpha"}
+      variant="outline"
+      onClick={() => router.push(href)}
+    >
+      {children}
+    </Button>
+  );
+});
 
-export function ProjectCard({ project }) {
-  const widths = "clamp(300px, 80vw, 410px)";
+export function ProjectCard({ project }: { project: Project }) {
+  const icons = new Proxy(
+    {
+      python: { icon: faPython, color: "blue" },
+      bootstrap: { icon: faBootstrap, color: "twitter" },
+      spotify: { icon: faSpotify, color: "green" },
+      java: { icon: faJava, color: "yellow" },
+      javascript: { icon: faJs, color: "yellow" },
+      react: { icon: faReact, color: "blue" },
+      postgresql: { icon: faDatabase, color: "blue" },
+      firebase: { icon: faFire, color: "orange" },
+    },
+    {
+      // It lets you return default values for hashes
+      get: (obj, prop) =>
+        obj.hasOwnProperty(prop) ? obj[prop] : { icon: faCode, color: "gray" },
+    }
+  );
   return (
     <FadeInOnScroll>
-      <Box border="1px solid lightgray" borderRadius="10px" margin="5px">
-        <Box>
+      <Box border="1px solid lightgray" borderRadius="10px" height="100%">
+        <Flex>
           <Image
             style={{ aspectRatio: "16/7" }}
-            width={widths}
             alt={project.name}
             borderTopRadius="10px"
             src={project.imageUrl}
           ></Image>
           <Center
-            margin="6px"
             style={{ aspectRatio: "16/7" }}
-            width={widths}
+            width="100%"
             borderTopRadius="10px"
             backgroundColor="black"
             position="absolute"
@@ -73,78 +87,35 @@ export function ProjectCard({ project }) {
           >
             <Flex width="50%" justify="space-around" gap="2em">
               {project.demoUrl != "" ? (
-                <ProjectButton href={project.demoUrl} >
-                  Demo
-                </ProjectButton>
+                <ProjectButton href={project.demoUrl}>Demo</ProjectButton>
               ) : (
                 <></>
               )}
-              <ProjectButton href={project.url}>
-                Source
-              </ProjectButton>
+              <ProjectButton href={project.url}>Source</ProjectButton>
             </Flex>
           </Center>
-        </Box>
+        </Flex>
         <Divider></Divider>
-        <Box width={widths} minHeight="190px" padding="8px">
+        <Box width="100%" minHeight="190px" padding="8px">
           <Flex justifyContent="space-between" alignItems="center">
-            <Heading
-              as="h6"
-              fontSize="clamp(18px, 2vw, 20px)"
-              lineHeight="40px"
-            >
+            <Heading as="h6" fontSize="clamp(15px, 2vw, 18px)" margin="0.3em 0">
               {project.name}
             </Heading>
           </Flex>
-          <Flex wrap="wrap">
-            {project.technology.split(",").map((e) => {
-              let icon = <FontAwesomeIcon icon={faCode}></FontAwesomeIcon>;
-              let color = "gray";
-              switch (e.toLowerCase()) {
-                case "python":
-                  icon = <FontAwesomeIcon icon={faPython}></FontAwesomeIcon>;
-                  color = "blue";
-                  break;
-                case "bootstrap":
-                  color = "twitter";
-                  icon = <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>;
-                  break;
-                case "spotify api":
-                  color = "green";
-                  icon = <FontAwesomeIcon icon={faSpotify}></FontAwesomeIcon>;
-                  break;
-                case "java":
-                  color = "yellow";
-                  icon = <FontAwesomeIcon icon={faJava}></FontAwesomeIcon>;
-                  break;
-                case "javascript":
-                  color = "yellow";
-                  icon = <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>;
-                  break;
-                case "react":
-                  color = "blue";
-                  icon = <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>;
-                  break;
-                case "postgresql":
-                  color = "blue";
-                  icon = <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>;
-                  break;
-                case "firebase":
-                  color = "orange";
-                  icon = <FontAwesomeIcon icon={faFire}></FontAwesomeIcon>;
-                  break;
-              }
+          <Flex wrap="wrap" gap="0em">
+            {project.technology.split(",").map((t: string) => {
+              const tag = t.toLocaleLowerCase();
               return (
                 <Badge
-                  key={e}
-                  colorScheme={color}
-                  marginRight="10px"
-                  padding="5px"
-                  marginBottom="10px"
+                  key={t}
+                  colorScheme={icons[tag].color}
+                  marginRight="0.5em"
+                  padding="0.4em"
+                  marginBottom="0.5em"
                   borderRadius="8px"
-                  fontSize="clamp(9px, 1vw, 12px)"
+                  fontSize="clamp(8px, 1vw, 10px)"
                 >
-                  {icon} {e}
+                  <FontAwesomeIcon icon={icons[tag].icon} /> {t}
                 </Badge>
               );
             })}

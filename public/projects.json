@@ -1,7 +1,7 @@
 [
   {
     "name": "Tuffyhacks Website",
-    "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation. Uses a PostgreSQL database for user and team data and Firebase for authentication and analytics",
+    "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
     "technology": "Javascript,React,PostgreSQL,Firebase",
     "imageUrl": "tuffyhacks.png",
     "url": "https://github.com/jaasonw/tuffyhacks.com",
@@ -9,7 +9,7 @@
   },
   {
     "name": "CSUFACS Website",
-    "description": "The website for the Association of Chinese Students at CSUF",
+    "description": "The proof of concept website for the Association of Chinese Students at CSUF",
     "technology": "Javascript,React",
     "imageUrl": "acs.png",
     "url": "https://github.com/CSUFACS/website",
@@ -18,7 +18,7 @@
   {
     "name": "Spotify Seasonal Playlist Sorter",
     "description": "A web app that automatically places a users liked songs into playlists grouped by seasons every 10 minutes, for instance, a \"spring 2020\" playlist",
-    "technology": "Python,Flask,Spotify API,Bootstrap",
+    "technology": "Python,Bootstrap,Flask,Spotify API",
     "imageUrl": "spotify.png",
     "url": "https://github.com/jaasonw/spotify-new-music-sorter",
     "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
