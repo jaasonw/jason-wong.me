@@ -27,9 +27,9 @@ export default function Header() {
             TuffyHacks
           </Link>
           , CSUF&apos;s premier hackathon and the second largest in Orange
-          County, and as a board member for{" "}
+          County, and as a board member for {" "}
           <Link color="asdf" href="https://acmcsuf.com">
-            acmCSUF
+            ACM at CSUF
           </Link>
           , the largest tech community on campus.
           {/*           
