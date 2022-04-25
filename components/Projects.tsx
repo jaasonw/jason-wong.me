@@ -7,7 +7,7 @@ export default function Projects({ projects }) {
   return (
     <Box>
       <FadeInOnScroll>
-        <Heading color="#3A86FF" textAlign="center">
+        <Heading color="#3A86FF" textAlign="center" marginBottom="0.5em">
           Project Showcase
         </Heading>
       </FadeInOnScroll>

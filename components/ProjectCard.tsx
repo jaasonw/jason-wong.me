@@ -56,6 +56,7 @@ export function ProjectCard({ project }: { project: Project }) {
       react: { icon: faReact, color: "blue" },
       postgresql: { icon: faDatabase, color: "blue" },
       firebase: { icon: faFire, color: "orange" },
+      svelte: { icon: faCode, color: "red" },
     },
     {
       // It lets you return default values for hashes

@@ -1,5 +1,13 @@
 [
   {
+    "name": "ACM at CSUF Website",
+    "description": "The website for the Association for Computing Machinery chapter at CSUF. Much of my work here is as a maintainer, primarily testing and reviewing pull requests or mentoring any members looking to contribute",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "acm.jpg",
+    "url": "https://github.com/EthanThatOneKid/acmcsuf.com",
+    "demoUrl": "https://acmcsuf.com"
+  },
+  {
     "name": "Tuffyhacks Website",
     "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
     "technology": "Javascript,React,PostgreSQL,Firebase",
