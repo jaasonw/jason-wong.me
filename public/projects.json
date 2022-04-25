@@ -25,7 +25,7 @@
   },
   {
     "name": "CSUFACS Website",
-    "description": "The proof of concept website for the Association of Chinese Students at CSUF",
+    "description": "The proof of concept website for the Association of Chinese Students at CSUF. Originally developed to promote the club and display weekly events but discontinued as I did not have the time to maintain it",
     "technology": "Javascript,React",
     "imageUrl": "acs.png",
     "url": "https://github.com/CSUFACS/website",
@@ -49,7 +49,7 @@
   },
   {
     "name": "APPE Regional Draft Analysis",
-    "description": "A program I wrote to run draft pick simulations to forcast forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
+    "description": "A program I wrote to run Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
     "technology": "Python",
     "imageUrl": "appe_sim.png",
     "url": "https://github.com/jaasonw/appe-simulation",
@@ -57,7 +57,7 @@
   },
   {
     "name": "SQLite Clone",
-    "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system",
+    "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system. Implements a B+tree for indexing",
     "technology": "C++",
     "imageUrl": "sqlite.png",
     "url": "https://github.com/jaasonw/Database",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Graphing Calculator",
-    "description": "A graphing calculator application capable of graphing 2d cartesian equations",
+    "description": "A graphing calculator application capable of graphing 2D cartesian equations. Implements the Shunting Yard algorithm to parse and evaluate user inputs",
     "technology": "C++,SFML",
     "imageUrl": "graph.png",
     "url": "https://github.com/jaasonw/graphing-calculator",
