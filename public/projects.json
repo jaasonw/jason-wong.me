@@ -16,20 +16,20 @@
     "demoUrl": "https://www.tuffyhacks.com/"
   },
   {
-    "name": "CSUFACS Website",
-    "description": "The proof of concept website for the Association of Chinese Students at CSUF",
-    "technology": "Javascript,React",
-    "imageUrl": "acs.png",
-    "url": "https://github.com/CSUFACS/website",
-    "demoUrl": "https://csufacs.netlify.app/"
-  },
-  {
     "name": "Spotify Seasonal Playlist Sorter",
     "description": "A web app that automatically places a users liked songs into playlists grouped by seasons every 10 minutes, for instance, a \"spring 2020\" playlist",
     "technology": "Python,Bootstrap,Flask,Spotify API",
     "imageUrl": "spotify.png",
     "url": "https://github.com/jaasonw/spotify-new-music-sorter",
     "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
+  },
+  {
+    "name": "CSUFACS Website",
+    "description": "The proof of concept website for the Association of Chinese Students at CSUF",
+    "technology": "Javascript,React",
+    "imageUrl": "acs.png",
+    "url": "https://github.com/CSUFACS/website",
+    "demoUrl": "https://csufacs.netlify.app/"
   },
   {
     "name": "osu! Collection Exporter",
