@@ -66,7 +66,7 @@ export function Header() {
               >
                 🎓 Studying at California State University, Fullerton
                 <br />
-                🚀 Incoming Software Engineering Intern at{" "}
+                🚀 Software Engineering Intern at{" "}
                 <Link href="https://www.amazon.com/" color="#FFBE0B">
                   Amazon
                 </Link>
