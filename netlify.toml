@@ -46,3 +46,6 @@
 [[redirects]]
   from = "/zelle"
   to = "./zelle.png"
+[[redirects]]
+  from = "/meeting"
+  to = "https://calendly.com/wayson"
