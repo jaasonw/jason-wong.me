@@ -40,3 +40,9 @@
 [[redirects]]
   from = "/acsform"
   to = "https://forms.gle/KNKVFQF3yPkQwN4p9"
+[[redirects]]
+  from = "/venmo"
+  to = "https://venmo.com/code?user_id=2440537361612800300&created=1657495186"
+[[redirects]]
+  from = "/zelle"
+  to = "./zelle.png"
