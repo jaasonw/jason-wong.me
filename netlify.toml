@@ -49,3 +49,9 @@
 [[redirects]]
   from = "/meeting"
   to = "https://calendly.com/wayson"
+[[redirects]]
+  from = "/acmmc"
+  to = "152.70.125.255:25465"
+[[redirects]]
+  from = "/minecraft"
+  to = "152.70.125.255:25565"
