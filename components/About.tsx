@@ -21,13 +21,16 @@ export default function Header() {
           mods for Minecraft and continued pursuing it, bringing us to where we
           are now. Since then, I&apos;ve had the opportunity to work at a
           startup and serve as TA at my community college, tutoring/mentoring
-          hundreds of students. More recently, I&apos;ve been able to serve as
-          an organizer for{" "}
+          hundreds of students. More recently, I&apos;ve been able to work at a{" "}
+          <Link color="asdf" href="https://www.amazon.com/">
+            large tech company
+          </Link>
+          , serve as an organizer for{" "}
           <Link color="asdf" href="https://tuffyhacks.com">
             TuffyHacks
           </Link>
           , CSUF&apos;s premier hackathon and the second largest in Orange
-          County, and as a board member for {" "}
+          County, and as a board member for{" "}
           <Link color="asdf" href="https://acmcsuf.com">
             ACM at CSUF
           </Link>
@@ -41,8 +44,8 @@ export default function Header() {
           ideas come to life. */}
           <br></br>
           <br></br>
-          During my free time I enjoy gaming with friends, being a photographer,
-          and binge watching animes/kdramas.
+          During my free time I enjoy gaming with friends, taking photos, and
+          binge watching animes/kdramas.
           <br></br>
           <br></br>
         </Container>
