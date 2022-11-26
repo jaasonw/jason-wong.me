@@ -1,34 +1,37 @@
-import { Button, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useRouter } from "next/dist/client/router";
 import React from "react";
 import { FadeInOnScroll } from "./FadeInOnScroll";
+import ctl from "@netlify/classnames-template-literals";
 
 function ContactButton({ icon, text, link }) {
-  const router = useRouter();
+  const buttonClasses = ctl(`
+    py-2.5
+    px-4
+    m-2
+    text-ghostwhite
+    bg-blue-700
+    hover:bg-blue-800
+    rounded-md
+    text-sm
+    font-bold
+  `);
   return (
-    <Button
-      margin="5px"
-      leftIcon={icon}
-      bg="#004ECC"
-      _hover={{ bg: "#002766" }}
-      _active={{ bg: "#002766" }}
-      variant="solid"
-      onClick={() => router.push(link)}
-    >
-      {text}
-    </Button>
+    <a className={buttonClasses} href={link}>
+      {icon} {text}
+    </a>
   );
 }
 
 export default function Contact() {
   return (
-    <Flex w="100%" p={6} bg="#3A86FF" justifyContent="center" color="white">
+    <section className="flex justify-center w-full p-6 bg-azure text-ghostwhite">
       <FadeInOnScroll>
-        <Container fontSize="xl" maxW="container.lg" textAlign="center">
-          <Heading color="#FFBE0B">Contact me</Heading>
+        <section className="text-xl max-w-7xl text-center">
+          <h1 className="font-heading font-medium text-4xl text-amber">
+            Contact me
+          </h1>
           Interested in hiring me or have an idea to pitch? I&apos;m currently
           open to work as a frontend developer and looking for opportunities to
           diversify my portfolio. Let&apos;s get in touch and discuss your
@@ -62,15 +65,18 @@ export default function Contact() {
           Copyright 2022
           <br></br>
           Built with{" "}
-          <Link as="a" color="#FFBE0B" href="https://nextjs.org/">
+          <a className="text-amber hover:underline" href="https://nextjs.org/">
             Next.js
-          </Link>{" "}
+          </a>{" "}
           &{" "}
-          <Link as="a" color="#FFBE0B" href="https://chakra-ui.com/">
-            ChakraUI
-          </Link>
-        </Container>
+          <a
+            className="text-amber hover:underline"
+            href="https://tailwindcss.com/"
+          >
+            TailwindCSS
+          </a>{" "}
+        </section>
       </FadeInOnScroll>
-    </Flex>
+    </section>
   );
 }

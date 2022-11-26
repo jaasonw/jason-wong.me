@@ -57,7 +57,7 @@ export function Header() {
               <span className="text-lg md:text-2xl">
                 🎓 Studying at California State University, Fullerton
                 <br />
-                🚀 Software Engineering Intern at{" "}
+                🚀 Former Software Engineering Intern at{" "}
                 <Link href="https://www.amazon.com/">
                   <a className="text-amber hover:underline">Amazon</a>
                 </Link>
