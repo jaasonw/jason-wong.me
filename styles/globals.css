@@ -11,3 +11,7 @@ html {
 ::selection {
   background: #ffc6ff; /* WebKit/Blink Browsers */
 }
+
+a {
+  @apply text-azure;
+}
