@@ -1,18 +1,14 @@
-import { Container, Flex, Heading, Link } from "@chakra-ui/react";
-// import Link from "next/link";
-import React from "react";
+import Link from "next/link";
 import { FadeInOnScroll } from "./FadeInOnScroll";
 
 export default function Header() {
   return (
-    <Flex w="100%" p={10} justifyContent="center">
+    <section className="flex w-full p-10 justify-center">
       <FadeInOnScroll>
-        <Container
-          fontSize="clamp(18px, 1.3vw, 20px)"
-          maxW="80rem"
-          textAlign="center"
-        >
-          <Heading color="#3A86FF">About me</Heading>
+        <section className="text-lg text-center max-w-7xl">
+          <h1 className="font-heading font-medium text-azure text-4xl">
+            About me
+          </h1>
           Hey there, I&apos;m Jason and I&apos;m a Los Angeles based frontend
           developer working towards a Bachelor&apos;s in Computer Science with a
           minor in Mathematics at Cal State Fullerton.
@@ -22,17 +18,17 @@ export default function Header() {
           are now. Since then, I&apos;ve had the opportunity to work at a
           startup and serve as TA at my community college, tutoring/mentoring
           hundreds of students. More recently, I&apos;ve been able to work at a{" "}
-          <Link color="asdf" href="https://www.amazon.com/">
-            large tech company
+          <Link href="https://www.amazon.com/">
+            <a className="color-azure hover:underline">large tech company</a>
           </Link>
           , serve as an organizer for{" "}
-          <Link color="asdf" href="https://tuffyhacks.com">
-            TuffyHacks
+          <Link href="https://tuffyhacks.com">
+            <a className="color-azure hover:underline">TuffyHacks</a>
           </Link>
           , CSUF&apos;s premier hackathon and the second largest in Orange
           County, and as a board member for{" "}
-          <Link color="asdf" href="https://acmcsuf.com">
-            ACM at CSUF
+          <Link href="https://acmcsuf.com">
+            <a className="color-azure hover:underline">ACM at CSUF</a>
           </Link>
           , the largest tech community on campus.
           {/*           
@@ -48,8 +44,8 @@ export default function Header() {
           binge watching animes/kdramas.
           <br></br>
           <br></br>
-        </Container>
+        </section>
       </FadeInOnScroll>
-    </Flex>
+    </section>
   );
 }

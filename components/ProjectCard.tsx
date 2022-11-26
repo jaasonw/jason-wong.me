@@ -1,17 +1,6 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Center,
-  chakra,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-} from "@chakra-ui/react";
+import { Badge, Button, chakra } from "@chakra-ui/react";
 import {
   faBootstrap,
-  faGithub,
   faJava,
   faJs,
   faPython,
@@ -19,7 +8,7 @@ import {
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
-
+import ctl from "@netlify/classnames-template-literals";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import router from "next/router";
 import React from "react";
@@ -64,46 +53,58 @@ export function ProjectCard({ project }: { project: Project }) {
         obj.hasOwnProperty(prop) ? obj[prop] : { icon: faCode, color: "gray" },
     }
   );
+
+  // css classes for the hover overlay
+  const overlayCN = ctl(`
+    flex
+    items-center
+    justify-center
+    border
+    rounded-t-md
+    aspect-[16/7]
+    absolute
+    top-0
+    left-0
+    w-full
+    opacity-0
+    bg-[black]
+    
+    transition
+    ease-out
+    duration-200
+
+    hover:opacity-80
+    hover:transition
+    hover:ease-in
+    hover:duration-200
+  `);
+
   return (
     <FadeInOnScroll>
-      <Box border="1px solid lightgray" borderRadius="10px" height="100%">
-        <Flex>
-          <Image
-            style={{ aspectRatio: "16/7" }}
-            alt={project.name}
-            borderTopRadius="10px"
+      <div className="border border-lightgray rounded-md">
+        <div className="flex">
+          <img
+            className="border rounded-t-md aspect-[16/7]"
             src={project.imageUrl}
-          ></Image>
-          <Center
-            style={{ aspectRatio: "16/7" }}
-            width="100%"
-            borderTopRadius="10px"
-            backgroundColor="black"
-            position="absolute"
-            top="0"
-            left="0"
-            opacity="0"
-            transition="all 0.2s ease-out"
-            _hover={{ opacity: 0.8, transition: "all 0.2s ease-in" }}
-          >
-            <Flex width="50%" justify="space-around" gap="2em">
+            alt={project.name}
+          ></img>
+          <div className={overlayCN}>
+            <div className="flex justify-around w-1/2 gap-8">
               {project.demoUrl != "" ? (
                 <ProjectButton href={project.demoUrl}>Demo</ProjectButton>
               ) : (
                 <></>
               )}
               <ProjectButton href={project.url}>Source</ProjectButton>
-            </Flex>
-          </Center>
-        </Flex>
-        <Divider></Divider>
-        <Box width="100%" minHeight="190px" padding="8px">
-          <Flex justifyContent="space-between" alignItems="center">
-            <Heading as="h6" fontSize="clamp(15px, 2vw, 18px)" margin="0.3em 0">
-              {project.name}
-            </Heading>
-          </Flex>
-          <Flex wrap="wrap" gap="0em">
+            </div>
+          </div>
+        </div>
+
+        <div className="border border-x-0 border-b-0 p-3 border-t-lightgray w-full min-h-[190px]">
+          <div className="flex justify-between items-center">
+            <h2 className=" text-lg font-bold">{project.name}</h2>
+          </div>
+          <div className="flex flex-wrap gap-0">
             {project.technology.split(",").map((t: string) => {
               const tag = t.toLocaleLowerCase();
               return (
@@ -120,14 +121,14 @@ export function ProjectCard({ project }: { project: Project }) {
                 </Badge>
               );
             })}
-          </Flex>
+          </div>
 
-          <Divider></Divider>
-          <Box color="gray" fontSize="clamp(13px, 2vw, 15px)">
-            {project.description}
-          </Box>
-        </Box>
-      </Box>
+          <div className="relative flex items-center py-1 h">
+            <div className="flex-grow border-t border-gray-400"></div>
+          </div>
+          <div className="text-[gray] text-sm">{project.description}</div>
+        </div>
+      </div>
     </FadeInOnScroll>
   );
 }

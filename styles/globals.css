@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 ::selection {
-  background: #FFC6FF; /* WebKit/Blink Browsers */
+  font-family: Lato, sans-serif;
+  background: #ffc6ff; /* WebKit/Blink Browsers */
 }
+
+/* h1 {
+  @apply text-4xl;
+  font-family: Lato;
+} */
