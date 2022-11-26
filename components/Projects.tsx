@@ -3,7 +3,7 @@ import { Project, ProjectCard } from "./ProjectCard/ProjectCard";
 
 export default function Projects({ projects }) {
   return (
-    <section className="flex flex-col items-center gap-0">
+    <section className="flex flex-col mb-8 items-center gap-0">
       <FadeInOnScroll>
         <h1 className="font-heading font-medium text-azure text-4xl text-center mb-5">
           Project Showcase

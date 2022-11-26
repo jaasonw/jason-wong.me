@@ -53,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="border border-lightgray rounded-md">
         <div className="flex">
           <img
-            className="border rounded-t-md aspect-[16/7]"
+            className="rounded-t-md aspect-[16/7]"
             src={project.imageUrl}
             alt={project.name}
           ></img>
