@@ -1,17 +1,17 @@
-// font awesome ssr workaround
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
-
-import {Header} from "../components/Header";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 import Script from "next/script";
 import React from "react";
-import About from "../components/About";
 
-import projects from "../public/projects.json";
-import Projects from "../components/Projects";
+import About from "../components/About";
 import Contact from "../components/Contact";
+import { Header } from "../components/Header";
+import Projects from "../components/Projects";
+import projects from "../public/projects.json";
+
+// font awesome ssr workaround
+config.autoAddCss = false;
 
 export default function Home({ projects }) {
   // https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff

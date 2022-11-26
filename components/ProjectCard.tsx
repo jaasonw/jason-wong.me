@@ -7,9 +7,10 @@ import {
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
-import ctl from "@netlify/classnames-template-literals";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ctl from "@netlify/classnames-template-literals";
 import React from "react";
+
 import { FadeInOnScroll } from "./FadeInOnScroll";
 
 export interface Project {

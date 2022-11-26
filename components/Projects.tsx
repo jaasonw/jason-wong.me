@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FadeInOnScroll } from "./FadeInOnScroll";
 import { Project, ProjectCard } from "./ProjectCard";
 
