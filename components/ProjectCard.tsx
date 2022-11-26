@@ -1,17 +1,5 @@
 import {
-  Badge,
-  Box,
-  Button,
-  Center,
-  chakra,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-} from "@chakra-ui/react";
-import {
   faBootstrap,
-  faGithub,
   faJava,
   faJs,
   faPython,
@@ -19,11 +7,11 @@ import {
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
-
+import ctl from "@netlify/classnames-template-literals";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import router from "next/router";
 import React from "react";
 import { FadeInOnScroll } from "./FadeInOnScroll";
+
 export interface Project {
   name: string;
   description: string;
@@ -33,24 +21,33 @@ export interface Project {
   demoUrl: string;
 }
 
-const ProjectButton = chakra(({ children, href }) => {
-  return (
-    <Button
-      colorScheme={"whiteAlpha"}
-      variant="outline"
-      onClick={() => router.push(href)}
-    >
-      {children}
-    </Button>
-  );
-});
+const ProjectButton = ({ children, href }) => {
+  const buttonClasses = ctl(`
+    border
+    border-neutral-500
+    bg-transparent
+    text-neutral-500
+    font-semibold
+    hover:text-neutral-600
+    py-2
+    px-4
+    hover:bg-neutral-900
+    rounded
+  `);
 
-export function ProjectCard({ project }: { project: Project }) {
+  return (
+    <a className={buttonClasses} href={href}>
+      {children}
+    </a>
+  );
+};
+
+const Badge = ({ children, tag }) => {
   const icons = new Proxy(
     {
       python: { icon: faPython, color: "blue" },
-      bootstrap: { icon: faBootstrap, color: "twitter" },
-      spotify: { icon: faSpotify, color: "green" },
+      bootstrap: { icon: faBootstrap, color: "sky" },
+      "spotify api": { icon: faSpotify, color: "green" },
       java: { icon: faJava, color: "yellow" },
       javascript: { icon: faJs, color: "yellow" },
       react: { icon: faReact, color: "blue" },
@@ -64,70 +61,103 @@ export function ProjectCard({ project }: { project: Project }) {
         obj.hasOwnProperty(prop) ? obj[prop] : { icon: faCode, color: "gray" },
     }
   );
+
+  const badgeClasses = ctl(`
+    rounded-md
+    text-xs
+    px-1
+    py-0.5
+    m-0.5
+    uppercase
+    font-bold
+    bg-${icons[tag].color}-200
+    text-${icons[tag].color}-700
+  `);
+
+  return (
+    <div className={badgeClasses}>
+      <FontAwesomeIcon icon={icons[tag].icon} /> {children}
+    </div>
+  );
+};
+
+export function ProjectCard({ project }: { project: Project }) {
+  // css classes for the hover overlay
+  const overlayClasses = ctl(`
+    flex
+    items-center
+    justify-center
+    rounded-t-md
+    aspect-[16/7]
+    absolute
+    top-0
+    left-0
+    w-full
+    opacity-0
+    bg-[black]
+    
+    transition
+    ease-out
+    duration-200
+
+    hover:opacity-80
+    hover:transition
+    hover:ease-in
+    hover:duration-200
+  `);
+
+  const descriptionClasses = ctl(`
+    border
+    border-x-0
+    border-b-0
+    p-3
+    border-t-lightgray
+    w-full
+    min-h-[190px]
+  `);
+
   return (
     <FadeInOnScroll>
-      <Box border="1px solid lightgray" borderRadius="10px" height="100%">
-        <Flex>
-          <Image
-            style={{ aspectRatio: "16/7" }}
-            alt={project.name}
-            borderTopRadius="10px"
+      <div className="border border-lightgray rounded-md">
+        <div className="flex">
+          <img
+            className="border rounded-t-md aspect-[16/7]"
             src={project.imageUrl}
-          ></Image>
-          <Center
-            style={{ aspectRatio: "16/7" }}
-            width="100%"
-            borderTopRadius="10px"
-            backgroundColor="black"
-            position="absolute"
-            top="0"
-            left="0"
-            opacity="0"
-            transition="all 0.2s ease-out"
-            _hover={{ opacity: 0.8, transition: "all 0.2s ease-in" }}
-          >
-            <Flex width="50%" justify="space-around" gap="2em">
+            alt={project.name}
+          ></img>
+          <div className={overlayClasses}>
+            <div className="flex justify-around w-1/2 gap-8">
               {project.demoUrl != "" ? (
                 <ProjectButton href={project.demoUrl}>Demo</ProjectButton>
               ) : (
                 <></>
               )}
               <ProjectButton href={project.url}>Source</ProjectButton>
-            </Flex>
-          </Center>
-        </Flex>
-        <Divider></Divider>
-        <Box width="100%" minHeight="190px" padding="8px">
-          <Flex justifyContent="space-between" alignItems="center">
-            <Heading as="h6" fontSize="clamp(15px, 2vw, 18px)" margin="0.3em 0">
-              {project.name}
-            </Heading>
-          </Flex>
-          <Flex wrap="wrap" gap="0em">
+            </div>
+          </div>
+        </div>
+
+        <div className={descriptionClasses}>
+          <div className="flex justify-between items-center">
+            <h2 className=" text-lg font-bold">{project.name}</h2>
+          </div>
+          <div className="flex flex-wrap gap-0">
             {project.technology.split(",").map((t: string) => {
               const tag = t.toLocaleLowerCase();
               return (
-                <Badge
-                  key={t}
-                  colorScheme={icons[tag].color}
-                  marginRight="0.5em"
-                  padding="0.4em"
-                  marginBottom="0.5em"
-                  borderRadius="8px"
-                  fontSize="clamp(8px, 1vw, 10px)"
-                >
-                  <FontAwesomeIcon icon={icons[tag].icon} /> {t}
+                <Badge key={t} tag={tag}>
+                  {t}
                 </Badge>
               );
             })}
-          </Flex>
+          </div>
 
-          <Divider></Divider>
-          <Box color="gray" fontSize="clamp(13px, 2vw, 15px)">
-            {project.description}
-          </Box>
-        </Box>
-      </Box>
+          <div className="relative flex items-center py-1 h">
+            <div className="flex-grow border-t border-gray-200"></div>
+          </div>
+          <div className="text-[gray] text-sm">{project.description}</div>
+        </div>
+      </div>
     </FadeInOnScroll>
   );
 }

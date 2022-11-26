@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 
 export function Header() {
@@ -28,10 +28,9 @@ export function Header() {
     },
   };
   return (
-    <Box bg="#3A86FF" w="100%" h="100vh" p={10} color="#E0FBFC">
-      <Flex height="100%" alignItems="center">
+    <section className="flex items-center bg-azure w-full h-screen px-10 text-ghostwhite">
+      <section className="flex items-center h-full">
         <motion.div
-          className="container"
           initial="hidden"
           animate="visible"
           variants={greeting}
@@ -39,42 +38,34 @@ export function Header() {
             duration: 0.2,
           }}
         >
-          <Box paddingLeft="1%" maxWidth="900px">
-            <Text
-              color="#FFBE0B"
-              fontSize="clamp(25px, 2.5vw, 40px)"
-              lineHeight="0"
-            >
+          <div className="pl-1 max-w-4xl">
+            <span className="text-amber text-2xl md:text-3xl leading-none">
               Hey there! My name is
-            </Text>
+            </span>
             <motion.div variants={item}>
-              <Heading color="#FFFFFC" fontSize="clamp(80px, 7vw, 120px)">
+              <h1 className=" font-heading font-medium text-7xl md:text-8xl">
                 Jason Wong
-              </Heading>
+              </h1>
             </motion.div>
-            <motion.div variants={item}>
-              <Text color="#F7F7FF" fontSize="clamp(20px, 1.5vw, 30px)">
+            <motion.div className="mt-4" variants={item}>
+              <span className="text-lg md:text-2xl leading-5">
                 Frontend Web Developer, Software Engineering student, and
                 sometimes a photographer
-              </Text>
+              </span>
             </motion.div>
-            <motion.div variants={item}>
-              <Text
-                color="#F7F7FF"
-                fontSize="clamp(18px, 1.5vw, 25px)"
-                paddingTop="3%"
-              >
+            <motion.div className="mt-6" variants={item}>
+              <span className="text-lg md:text-2xl">
                 🎓 Studying at California State University, Fullerton
                 <br />
-                🚀 Software Engineering Intern at{" "}
-                <Link href="https://www.amazon.com/" color="#FFBE0B">
-                  Amazon
+                🚀 Former Software Engineering Intern at{" "}
+                <Link href="https://www.amazon.com/">
+                  <a className="text-amber hover:underline">Amazon</a>
                 </Link>
-              </Text>
+              </span>
             </motion.div>
-          </Box>
+          </div>
         </motion.div>
-      </Flex>
-    </Box>
+      </section>
+    </section>
   );
 }

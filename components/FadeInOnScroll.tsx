@@ -1,9 +1,6 @@
-import { Box } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-
-const MotionBox = motion(Box);
 
 export function FadeInOnScroll({ children }) {
   const controls = useAnimation();
@@ -25,13 +22,13 @@ export function FadeInOnScroll({ children }) {
     },
   };
   return (
-    <MotionBox
+    <motion.div
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={variants}
     >
       {children}
-    </MotionBox>
+    </motion.div>
   );
 }
