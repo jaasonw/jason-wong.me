@@ -9,7 +9,6 @@ import {
 import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
 import ctl from "@netlify/classnames-template-literals";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import router from "next/router";
 import React from "react";
 import { FadeInOnScroll } from "./FadeInOnScroll";
 
@@ -145,7 +144,11 @@ export function ProjectCard({ project }: { project: Project }) {
           <div className="flex flex-wrap gap-0">
             {project.technology.split(",").map((t: string) => {
               const tag = t.toLocaleLowerCase();
-              return <Badge tag={tag}>{t}</Badge>;
+              return (
+                <Badge key={t} tag={tag}>
+                  {t}
+                </Badge>
+              );
             })}
           </div>
 
