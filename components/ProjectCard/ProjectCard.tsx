@@ -1,17 +1,8 @@
-import {
-  faBootstrap,
-  faJava,
-  faJs,
-  faPython,
-  faReact,
-  faSpotify,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDatabase, faFire } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ctl from "@netlify/classnames-template-literals";
-import React from "react";
 
-import { FadeInOnScroll } from "./FadeInOnScroll";
+import { FadeInOnScroll } from "../FadeInOnScroll";
+import { Badge } from "./Badge";
+import { Button } from "./Button";
 
 export interface Project {
   name: string;
@@ -21,66 +12,6 @@ export interface Project {
   url: string;
   demoUrl: string;
 }
-
-const ProjectButton = ({ children, href }) => {
-  const buttonClasses = ctl(`
-    border
-    border-neutral-500
-    bg-transparent
-    text-neutral-500
-    font-semibold
-    hover:text-neutral-600
-    py-2
-    px-4
-    hover:bg-neutral-900
-    rounded
-  `);
-
-  return (
-    <a className={buttonClasses} href={href}>
-      {children}
-    </a>
-  );
-};
-
-const Badge = ({ children, tag }) => {
-  const icons = new Proxy(
-    {
-      python: { icon: faPython, color: "blue" },
-      bootstrap: { icon: faBootstrap, color: "sky" },
-      "spotify api": { icon: faSpotify, color: "green" },
-      java: { icon: faJava, color: "yellow" },
-      javascript: { icon: faJs, color: "yellow" },
-      react: { icon: faReact, color: "blue" },
-      postgresql: { icon: faDatabase, color: "blue" },
-      firebase: { icon: faFire, color: "orange" },
-      svelte: { icon: faCode, color: "red" },
-    },
-    {
-      // It lets you return default values for hashes
-      get: (obj, prop) =>
-        obj.hasOwnProperty(prop) ? obj[prop] : { icon: faCode, color: "gray" },
-    }
-  );
-
-  const badgeClasses = ctl(`
-    rounded-md
-    text-xs
-    px-1
-    py-0.5
-    m-0.5
-    uppercase
-    font-bold
-    bg-${icons[tag].color}-200
-    text-${icons[tag].color}-700
-  `);
-
-  return (
-    <div className={badgeClasses}>
-      <FontAwesomeIcon icon={icons[tag].icon} /> {children}
-    </div>
-  );
-};
 
 export function ProjectCard({ project }: { project: Project }) {
   // css classes for the hover overlay
@@ -129,11 +60,11 @@ export function ProjectCard({ project }: { project: Project }) {
           <div className={overlayClasses}>
             <div className="flex justify-around w-1/2 gap-8">
               {project.demoUrl != "" ? (
-                <ProjectButton href={project.demoUrl}>Demo</ProjectButton>
+                <Button href={project.demoUrl}>Demo</Button>
               ) : (
                 <></>
               )}
-              <ProjectButton href={project.url}>Source</ProjectButton>
+              <Button href={project.url}>Source</Button>
             </div>
           </div>
         </div>

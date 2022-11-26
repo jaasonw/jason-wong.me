@@ -1,7 +1,5 @@
-import React from "react";
-
 import { FadeInOnScroll } from "./FadeInOnScroll";
-import { Project, ProjectCard } from "./ProjectCard";
+import { Project, ProjectCard } from "./ProjectCard/ProjectCard";
 
 export default function Projects({ projects }) {
   return (

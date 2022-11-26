@@ -2,7 +2,6 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ctl from "@netlify/classnames-template-literals";
-import React from "react";
 
 import { FadeInOnScroll } from "./FadeInOnScroll";
 

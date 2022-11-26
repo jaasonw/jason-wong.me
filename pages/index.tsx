@@ -2,7 +2,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 import Script from "next/script";
-import React from "react";
 
 import About from "../components/About";
 import Contact from "../components/Contact";
