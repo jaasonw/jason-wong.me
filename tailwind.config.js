@@ -22,7 +22,7 @@ module.exports = {
   },
   safelist: [
     {
-      pattern: /(bg|text)-\w*-\d\d\d/,
+      pattern: /(bg|text)-(blue|sky|green|yellow|orange|red)-(200|700)/,
     },
   ],
   plugins: [],
