@@ -24,24 +24,24 @@ export default function Home({ projects }) {
           key="title"
         />
         <meta property="og:image" content={"https://i.imgur.com/v6izSs0.png"} />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=UA-46712726-4"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      </Head>
+      <Header />
+      <About />
+      <Projects projects={projects} />
+      <Contact />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-46712726-4"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'UA-46712726-4');
         `}
-        </Script>
-      </Head>
-      <Header />
-      <About />
-      <Projects projects={projects} />
-      <Contact />
+      </Script>
     </>
   );
 }

@@ -11,7 +11,7 @@
     "name": "Tuffyhacks Website",
     "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
     "technology": "Javascript,React,PostgreSQL,Firebase",
-    "imageUrl": "tuffyhacks.png",
+    "imageUrl": "tuffyhacks.jpg",
     "url": "https://github.com/jaasonw/tuffyhacks.com",
     "demoUrl": "https://www.tuffyhacks.com/"
   },
@@ -19,7 +19,7 @@
     "name": "Spotify Seasonal Playlist Sorter",
     "description": "A web app that automatically places a users liked songs into playlists grouped by seasons every 10 minutes, for instance, a \"spring 2020\" playlist",
     "technology": "Python,Bootstrap,Flask,Spotify API",
-    "imageUrl": "spotify.png",
+    "imageUrl": "spotify.jpg",
     "url": "https://github.com/jaasonw/spotify-new-music-sorter",
     "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
   },
@@ -27,7 +27,7 @@
     "name": "CSUFACS Website",
     "description": "The proof of concept website for the Association of Chinese Students at CSUF. Originally developed to promote the club and display weekly events but discontinued as I did not have the time to maintain it",
     "technology": "Javascript,React",
-    "imageUrl": "acs.png",
+    "imageUrl": "acs.jpg",
     "url": "https://github.com/CSUFACS/website",
     "demoUrl": ""
   },
@@ -35,7 +35,7 @@
     "name": "osu! Collection Exporter",
     "description": "A web app that converts an osu! collections database into a list of beatmap links. Uses an in house made Javascript library to parse beatmap binary data",
     "technology": "Javascript",
-    "imageUrl": "collection_exporter.png",
+    "imageUrl": "collection_exporter.jpg",
     "url": "https://github.com/jaasonw/osu-collection-exporter",
     "demoUrl": "https://jaasonw.github.io/osu-collection-exporter/"
   },
@@ -43,7 +43,7 @@
     "name": "osu! Stream Speed Benchmark",
     "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
     "technology": "Javascript, JQuery",
-    "imageUrl": "stream_speed.png",
+    "imageUrl": "stream_speed.jpg",
     "url": "https://github.com/jaasonw/osuStreamspeed.js",
     "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
   },
@@ -51,7 +51,7 @@
     "name": "APPE Regional Draft Analysis",
     "description": "A program I wrote to run Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
     "technology": "Python",
-    "imageUrl": "appe_sim.png",
+    "imageUrl": "appe_sim.jpg",
     "url": "https://github.com/jaasonw/appe-simulation",
     "demoUrl": ""
   },
@@ -59,7 +59,7 @@
     "name": "SQLite Clone",
     "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system. Implements a B+tree for indexing",
     "technology": "C++",
-    "imageUrl": "sqlite.png",
+    "imageUrl": "sqlite.jpg",
     "url": "https://github.com/jaasonw/Database",
     "demoUrl": ""
   },
@@ -67,7 +67,7 @@
     "name": "Graphing Calculator",
     "description": "A graphing calculator application capable of graphing 2D cartesian equations. Implements the Shunting Yard algorithm to parse and evaluate user inputs",
     "technology": "C++,SFML",
-    "imageUrl": "graph.png",
+    "imageUrl": "graph.jpg",
     "url": "https://github.com/jaasonw/graphing-calculator",
     "demoUrl": ""
   },
@@ -75,7 +75,7 @@
     "name": "Sushi Shop",
     "description": "A sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order",
     "technology": "Java,JavaFx",
-    "imageUrl": "sushi.png",
+    "imageUrl": "sushi.jpg",
     "url": "https://github.com/jaasonw/sushi_shop",
     "demoUrl": ""
   }
