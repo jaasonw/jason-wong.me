@@ -16,6 +16,7 @@ function ContactButton({ icon, text, link }) {
     rounded-md
     text-sm
     font-bold
+    whitespace-nowrap
   `);
   return (
     <a className={buttonClasses} href={link}>
@@ -36,30 +37,28 @@ export default function Contact() {
           open to work as a frontend developer and looking for opportunities to
           diversify my portfolio. Let&apos;s get in touch and discuss your
           project ideas.
-          <br></br>
-          <br></br>
-          <ContactButton
-            icon={<FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>}
-            text="LinkedIn"
-            link="https://www.linkedin.com/in/wayson/"
-          ></ContactButton>
-          <ContactButton
-            icon={<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>}
-            text="Github"
-            link="https://github.com/jaasonw"
-          ></ContactButton>
-          <ContactButton
-            icon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
-            text="Email"
-            link="mailto:jayywong92@gmail.com"
-          ></ContactButton>
-          <ContactButton
-            icon={<FontAwesomeIcon icon={faFileAlt}></FontAwesomeIcon>}
-            text="Resume"
-            link="https://jaasonw.github.io/files/resume.pdf"
-          ></ContactButton>
-          <br></br>
-          <br></br>
+          <section className="flex flex-wrap justify-center">
+            <ContactButton
+              icon={<FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>}
+              text="LinkedIn"
+              link="https://www.linkedin.com/in/wayson/"
+            ></ContactButton>
+            <ContactButton
+              icon={<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>}
+              text="Github"
+              link="https://github.com/jaasonw"
+            ></ContactButton>
+            <ContactButton
+              icon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
+              text="Email"
+              link="mailto:jayywong92@gmail.com"
+            ></ContactButton>
+            <ContactButton
+              icon={<FontAwesomeIcon icon={faFileAlt}></FontAwesomeIcon>}
+              text="Resume"
+              link="https://jaasonw.github.io/files/resume.pdf"
+            ></ContactButton>
+          </section>
           Designed and built by Jason Wong
           <br></br>
           Copyright 2022
