@@ -19,18 +19,24 @@ export default function Header() {
           are now. Since then, I&apos;ve had the opportunity to work at a
           startup and serve as TA at my community college, tutoring/mentoring
           hundreds of students. More recently, I&apos;ve been able to work at a{" "}
-          <Link href="https://www.amazon.com/">
-            <a className="color-azure hover:underline">large tech company</a>
-          </Link>
+          <a
+            className="color-azure hover:underline"
+            href="https://www.amazon.com/"
+          >
+            large tech company
+          </a>
           , serve as an organizer for{" "}
-          <Link href="https://tuffyhacks.com">
-            <a className="color-azure hover:underline">TuffyHacks</a>
-          </Link>
+          <a
+            className="color-azure hover:underline"
+            href="https://tuffyhacks.com"
+          >
+            TuffyHacks
+          </a>
           , CSUF&apos;s premier hackathon and the second largest in Orange
           County, and as a board member for{" "}
-          <Link href="https://acmcsuf.com">
-            <a className="color-azure hover:underline">ACM at CSUF</a>
-          </Link>
+          <a className="color-azure hover:underline" href="https://acmcsuf.com">
+            ACM at CSUF
+          </a>
           , the largest tech community on campus.
           {/*           
             Since then,

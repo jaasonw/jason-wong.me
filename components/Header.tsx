@@ -57,9 +57,12 @@ export function Header() {
                 🎓 Studying at California State University, Fullerton
                 <br />
                 🚀 Former Software Engineering Intern at{" "}
-                <Link href="https://www.amazon.com/">
-                  <a className="text-amber hover:underline">Amazon</a>
-                </Link>
+                <a
+                  className="text-amber hover:underline"
+                  href="https://www.amazon.com/"
+                >
+                  Amazon
+                </a>
               </span>
             </motion.div>
           </div>

@@ -1,4 +1,5 @@
 import ctl from "@netlify/classnames-template-literals";
+import Image from "next/image";
 
 import { FadeInOnScroll } from "../FadeInOnScroll";
 import { Badge } from "./Badge";
@@ -52,11 +53,14 @@ export function ProjectCard({ project }: { project: Project }) {
     <FadeInOnScroll>
       <div className="border border-lightgray rounded-md">
         <div className="flex">
-          <img
+          <Image
             className="rounded-t-md aspect-[16/7]"
-            src={project.imageUrl}
+            src={`/${project.imageUrl}`}
             alt={project.name}
-          ></img>
+            height={1562}
+            width={683}
+            placeholder="blur"
+          ></Image>
           <div className={overlayClasses}>
             <div className="flex justify-around w-1/2 gap-8">
               {project.demoUrl != "" ? (
