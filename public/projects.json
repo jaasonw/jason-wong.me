@@ -1,5 +1,13 @@
 [
   {
+    "name": "Pathfinder",
+    "description": "An interactive visualization for various pathfinding algorithms. Just a fun side project for winter break to learn some more Svelte",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "pathfinder.jpg",
+    "url": "https://github.com/jaasonw/pathfinder",
+    "demoUrl": "https://pathfinder-lake.vercel.app/"
+  },
+  {
     "name": "ACM at CSUF Website",
     "description": "The website for the Association for Computing Machinery chapter at CSUF. Much of my work here is as a maintainer, primarily testing and reviewing pull requests or mentoring any members looking to contribute",
     "technology": "Javascript,Svelte",
