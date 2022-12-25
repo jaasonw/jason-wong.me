@@ -1,11 +1,19 @@
 [
   {
     "name": "Pathfinder",
-    "description": "An interactive visualization for various pathfinding algorithms. Just a fun side project for winter break to learn some more Svelte",
+    "description": "An interactive web app that visualizes pathfinding algorithms to demonstrate performance of various algorithms to better understand their strengths and weaknesses.",
     "technology": "Javascript,Svelte",
     "imageUrl": "pathfinder.jpg",
     "url": "https://github.com/jaasonw/pathfinder",
     "demoUrl": "https://pathfinder-lake.vercel.app/"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "description": "A multiplayer Tic-Tac-Toe web app. Implements multiplayer using Pocketbase for game state synchronization between 2 players. Submitted as the final project for my web frontend class. ",
+    "technology": "Javascript,Svelte,Pocketbase",
+    "imageUrl": "tictactoe.jpg",
+    "url": "https://github.com/jaasonw/tictactoe-spock",
+    "demoUrl": "https://tictactoe-spock.vercel.app/"
   },
   {
     "name": "ACM at CSUF Website",
