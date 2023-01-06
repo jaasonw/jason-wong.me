@@ -61,7 +61,7 @@ export default function Contact() {
           </section>
           Designed and built by Jason Wong
           <br></br>
-          Copyright 2022
+          Copyright 2023
           <br></br>
           Built with{" "}
           <a className="text-amber hover:underline" href="https://nextjs.org/">
