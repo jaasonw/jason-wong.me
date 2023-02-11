@@ -1,5 +1,13 @@
 [
   {
+    "name": "Matrix Visualizer",
+    "description": "An interactive web app allows users to interactively perform row operations on an m x n dimensional matrix with support for symbolic math (CAS)",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "matrix-visualizer.jpg",
+    "url": "https://github.com/jaasonw/matrix-visualizer",
+    "demoUrl": "https://matrix-visualizer.vercel.app/"
+  },
+  {
     "name": "Pathfinder",
     "description": "An interactive web app that visualizes pathfinding algorithms to demonstrate performance of various algorithms to better understand their strengths and weaknesses.",
     "technology": "Javascript,Svelte",
