@@ -12,7 +12,7 @@
   to = "https://anilist.co/user/wayson/"
 [[redirects]]
   from = "/resume"
-  to = "https://jaasonw.github.io/files/resume.pdf"
+  to = "/resume.pdf"
 [[redirects]]
   from = "/github"
   to = "https://github.com/jaasonw"
