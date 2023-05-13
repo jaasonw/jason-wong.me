@@ -41,12 +41,12 @@ export default function Contact() {
             <ContactButton
               icon={<FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>}
               text="LinkedIn"
-              link="https://www.linkedin.com/in/wayson/"
+              link="/linkedin"
             ></ContactButton>
             <ContactButton
               icon={<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>}
               text="Github"
-              link="https://github.com/jaasonw"
+              link="/github"
             ></ContactButton>
             <ContactButton
               icon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
@@ -56,7 +56,7 @@ export default function Contact() {
             <ContactButton
               icon={<FontAwesomeIcon icon={faFileAlt}></FontAwesomeIcon>}
               text="Resume"
-              link="https://jaasonw.github.io/files/resume.pdf"
+              link="/github"
             ></ContactButton>
           </section>
           Designed and built by Jason Wong
