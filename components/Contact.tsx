@@ -56,7 +56,7 @@ export default function Contact() {
             <ContactButton
               icon={<FontAwesomeIcon icon={faFileAlt}></FontAwesomeIcon>}
               text="Resume"
-              link="/github"
+              link="/resume"
             ></ContactButton>
           </section>
           Designed and built by Jason Wong
