@@ -59,7 +59,7 @@ export function ProjectCard({ project }: { project: Project }) {
             alt={project.name}
             height={1562}
             width={683}
-            placeholder="blur"
+            // placeholder="blur"
           ></Image>
           <div className={overlayClasses}>
             <div className="flex justify-around w-1/2 gap-8">

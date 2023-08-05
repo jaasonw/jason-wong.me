@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Lato, sans-serif;
+  font-style: light;
+}
+
+/* WebKit/Blink Browsers */
+/*
+::selection {
+  background: #ffc6ff; 
+}
+*/
+
+a {
+  @apply underline;
+  @apply underline-offset-4;
+  @apply hover:text-blue-500;
+  @apply dark:hover:text-blue-500;
+}

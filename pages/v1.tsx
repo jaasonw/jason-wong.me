@@ -12,7 +12,7 @@ import projects from "../public/projects.json";
 // font awesome ssr workaround
 config.autoAddCss = false;
 
-export default function Home({ projects }) {
+export default function Home({ projects }: any) {
   // https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff
   return (
     <>

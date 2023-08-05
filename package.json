@@ -17,6 +17,7 @@
     "@netlify/classnames-template-literals": "^1.0.3",
     "framer-motion": "^10.12.10",
     "next": "^13.4.2",
+    "preact": "^10.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3"
