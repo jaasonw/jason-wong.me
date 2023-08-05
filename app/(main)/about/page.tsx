@@ -31,9 +31,9 @@ export default function About() {
     Flask: "#000000",
     Postgres: "#336791",
     Docker: "#2496ed",
-    Firebase: "#ffca28",
     "Amazon Web Services": "#232f3e",
     "Google Cloud": "#4285f4",
+    Firebase: "#ffca28",
   };
   return (
     <div className="flex flex-col gap-2 h-full">
@@ -42,7 +42,7 @@ export default function About() {
       <div className="flex flex-col text-lg gap-5">
         <section>
           I'm Jason, I recently graduated from Cal State Fullerton with a
-          Bachelors in Computer Science and Minor in mathematics.
+          Bachelors in Computer Science and Minor in Mathematics.
           <br></br>
           <br></br>
           I'm a frontend software engineer with a passion for building beautiful

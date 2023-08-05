@@ -7,6 +7,15 @@ html {
   font-family: Lato, sans-serif;
   font-style: light;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+}
 
 ::selection {
   background: #ffc6ff; /* WebKit/Blink Browsers */

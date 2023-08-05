@@ -18,7 +18,7 @@ module.exports = {
         ghostwhite: "#F7F7FF",
       },
       fontFamily: {
-        heading: "Montserrat, sans-serif",
+        sans: ["var(--font-inter)"],
       },
     },
   },
