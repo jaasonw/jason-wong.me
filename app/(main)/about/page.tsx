@@ -36,7 +36,7 @@ export default function About() {
     Firebase: "#ffca28",
   };
   return (
-    <div className="flex flex-col gap-2 h-full">
+    <div className="flex flex-col gap-2">
       <h1 className="text-6xl font-bold">About</h1>
       <hr></hr>
       <div className="flex flex-col text-lg gap-5">
