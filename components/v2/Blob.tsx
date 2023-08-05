@@ -64,18 +64,18 @@ export default function Blob() {
         animate="default"
         transition={{
           x: {
-            duration: 0.3,
+            duration: 0.1,
             ease: "linear",
             repeat: 0,
-            type: "spring",
-            stiffness: 50,
+            // type: "spring",
+            stiffness: 80,
           },
           y: {
-            duration: 0.3,
+            duration: 0.1,
             ease: "linear",
             repeat: 0,
-            type: "spring",
-            stiffness: 50,
+            // type: "spring",
+            stiffness: 80,
           },
           default: {
             duration: 20,
