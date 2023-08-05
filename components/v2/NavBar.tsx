@@ -31,7 +31,7 @@ export default function NavBar({ className }: { className: string }) {
         <div className="flex items-center gap-5 ">
           {links.map((l) => {
             return (
-              <Link href={l.link} className="no-underline">
+              <Link href={l.link} className="no-underline" key={l.link}>
                 {l.name}
               </Link>
             );

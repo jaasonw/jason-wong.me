@@ -1,5 +1,5 @@
 import Footer from "$lib/components/v2/Footer";
-import NavBar from "$lib/components/v2/Navbar";
+import NavBar from "$lib/components/v2/NavBar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
