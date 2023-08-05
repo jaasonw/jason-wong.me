@@ -1,9 +1,8 @@
+import { FadeInOnScroll } from "$lib/components/v1/FadeInOnScroll";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ctl from "@netlify/classnames-template-literals";
-
-import { FadeInOnScroll } from "./FadeInOnScroll";
 
 function ContactButton({ icon, text, link }) {
   const buttonClasses = ctl(`

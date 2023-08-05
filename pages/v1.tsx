@@ -1,13 +1,12 @@
+import About from "$lib/components/v1/About";
+import Contact from "$lib/components/v1/Contact";
+import { Header } from "$lib/components/v1/Header";
+import Projects from "$lib/components/v1/Projects";
+import projects from "$lib/public/projects.json";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 import Script from "next/script";
-
-import About from "../components/About";
-import Contact from "../components/Contact";
-import { Header } from "../components/Header";
-import Projects from "../components/Projects";
-import projects from "../public/projects.json";
 
 // font awesome ssr workaround
 config.autoAddCss = false;

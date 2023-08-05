@@ -1,6 +1,5 @@
+import { FadeInOnScroll } from "$lib/components/v1/FadeInOnScroll";
 import Link from "next/link";
-
-import { FadeInOnScroll } from "./FadeInOnScroll";
 
 export default function Header() {
   return (
