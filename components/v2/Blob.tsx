@@ -31,7 +31,7 @@ export default function Blob() {
     width: "800px",
     height: "700px",
     borderRadius: "100%",
-    // filter: " blur(200px)",
+    filter: "blur(150px)",
     backgroundColor: "rgb(255, 67, 75)",
     background: "linear-gradient(#0284c7, #a855f7)",
     opacity: 0.4,
@@ -83,15 +83,15 @@ export default function Blob() {
           },
         }}
       ></motion.div>
-      <div
+      {/* <div
         style={{
           position: "absolute",
-          height: "100%",
-          width: "100%",
+          height: "100vh",
+          width: "100vw",
           backdropFilter: "blur(200px)",
           zIndex: -1,
         }}
-      ></div>
+      ></div> */}
     </>
   );
 }
