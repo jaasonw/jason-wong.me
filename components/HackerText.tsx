@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 
 const letters =
@@ -26,7 +27,7 @@ export default function HackerText({ text }: { text: string }) {
             }
             return letters[Math.floor(Math.random() * letters.length)];
           })
-          .join("")
+          .join(""),
       );
       if (iteration >= text.length) {
         clearInterval(interval);

@@ -27,7 +27,7 @@ export const Badge = ({ children, tag }) => {
       // It lets you return default values for hashes
       get: (obj, prop) =>
         obj.hasOwnProperty(prop) ? obj[prop] : { icon: faCode, color: "gray" },
-    }
+    },
   );
 
   const badgeClasses = ctl(`
