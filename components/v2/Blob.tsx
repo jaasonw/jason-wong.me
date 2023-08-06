@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-// import "./App.css";
-
 export default function Blob() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -27,32 +25,26 @@ export default function Blob() {
   }, []);
 
   const style = {
-    transform: "translate(-50%, -50%)",
-    width: "800px",
-    height: "700px",
+    // transform: "translate(-50%, -50%)",
+    width: "900px",
+    height: "800px",
     borderRadius: "100%",
     filter: "blur(150px)",
     backgroundColor: "rgb(255, 67, 75)",
     background: "linear-gradient(#0284c7, #a855f7)",
     opacity: 0.4,
-    zIndex: -2,
+    zIndex: -9999,
   };
 
   const variants = {
     default: {
-      x: mousePosition.x - 200,
-      y: mousePosition.y - 200,
+      // x: mousePosition.x,
+      // y: mousePosition.y,
       // scale: [1, 2, 2, 1, 1],
       rotate: [0, 360],
       // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
     },
   };
-
-  // const animate = {
-  //   scale: [1, 2, 2, 1, 1],
-  //   rotate: [0, 0, 270, 270, 0],
-  //   borderRadius: ['20%', '20%', '50%', '50%', '20%'],
-  // };
 
   return (
     <>
@@ -83,15 +75,6 @@ export default function Blob() {
           },
         }}
       ></motion.div>
-      {/* <div
-        style={{
-          position: "absolute",
-          height: "100vh",
-          width: "100vw",
-          backdropFilter: "blur(200px)",
-          zIndex: -1,
-        }}
-      ></div> */}
     </>
   );
 }
