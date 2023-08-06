@@ -1,3 +1,4 @@
+import Blob from "$lib/components/v2/Blob";
 import Footer from "$lib/components/v2/Footer";
 import NavBar from "$lib/components/v2/NavBar";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -23,6 +24,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <Blob />
       </body>
     </html>
   );
