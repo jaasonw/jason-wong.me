@@ -1,0 +1,106 @@
+[
+  {
+    "name": "SWEify",
+    "description": "Automatically scrapes job boards to parse and curate job listings for entry level and new grad software engineering positions. ",
+    "technology": "Python,Bootstrap,Flask,Spotify API",
+    "imageUrl": "sweify.png",
+    "url": "https://github.com/jaasonw/sweify",
+    "demoUrl": "https://sweify.vercel.app/"
+  },
+  {
+    "name": "Spotify Seasonal Playlist Sorter",
+    "description": "A web app that automatically groups songs in a user's Spotify library into playlists based on the current season.",
+    "technology": "Python,Bootstrap,Flask,Spotify API",
+    "imageUrl": "spotify.jpg",
+    "url": "https://github.com/jaasonw/spotify-new-music-sorter",
+    "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
+  },
+  {
+    "name": "Matrix Visualizer",
+    "description": "An interactive web app allows users to interactively perform row operations on an m x n dimensional matrix with support for symbolic math (CAS)",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "matrix-visualizer.jpg",
+    "url": "https://github.com/jaasonw/matrix-visualizer",
+    "demoUrl": "https://matrix-visualizer.vercel.app/"
+  },
+  {
+    "name": "Pathfinder",
+    "description": "An interactive web app that visualizes pathfinding algorithms to demonstrate performance of various algorithms to better understand their strengths and weaknesses.",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "pathfinder.jpg",
+    "url": "https://github.com/jaasonw/pathfinder",
+    "demoUrl": "https://pathfinder-lake.vercel.app/"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "description": "A multiplayer Tic-Tac-Toe web app. Implements multiplayer using Pocketbase for game state synchronization between 2 players. Submitted as the final project for my web frontend class. ",
+    "technology": "Javascript,Svelte,Pocketbase",
+    "imageUrl": "tictactoe.jpg",
+    "url": "https://github.com/jaasonw/tictactoe-spock",
+    "demoUrl": "https://tictactoe-spock.vercel.app/"
+  },
+  {
+    "name": "ACM at CSUF Website",
+    "description": "The website for the Association for Computing Machinery chapter at CSUF. Much of my work here is as a maintainer, primarily testing and reviewing pull requests or mentoring any members looking to contribute",
+    "technology": "Javascript,Svelte",
+    "imageUrl": "acm.jpg",
+    "url": "https://github.com/EthanThatOneKid/acmcsuf.com",
+    "demoUrl": "https://acmcsuf.com"
+  },
+  {
+    "name": "Tuffyhacks Website",
+    "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
+    "technology": "Javascript,React,PostgreSQL,Firebase",
+    "imageUrl": "tuffyhacks.jpg",
+    "url": "https://github.com/jaasonw/tuffyhacks.com",
+    "demoUrl": "https://www.tuffyhacks.com/"
+  },
+  {
+    "name": "osu! Collection Exporter",
+    "description": "A web app that converts an osu! collections database into a list of beatmap links. Uses an in house made Javascript library to parse beatmap binary data",
+    "technology": "Javascript",
+    "imageUrl": "collection_exporter.jpg",
+    "url": "https://github.com/jaasonw/osu-collection-exporter",
+    "demoUrl": "https://jaasonw.github.io/osu-collection-exporter/"
+  },
+  {
+    "name": "osu! Stream Speed Benchmark",
+    "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
+    "technology": "Javascript, JQuery",
+    "imageUrl": "stream_speed.jpg",
+    "url": "https://github.com/jaasonw/osuStreamspeed.js",
+    "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
+  },
+  {
+    "name": "APPE Regional Draft Analysis",
+    "description": "A program I wrote to run Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
+    "technology": "Python",
+    "imageUrl": "appe_sim.jpg",
+    "url": "https://github.com/jaasonw/appe-simulation",
+    "demoUrl": ""
+  },
+  {
+    "name": "SQLite Clone",
+    "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system. Implements a B+tree for indexing",
+    "technology": "C++",
+    "imageUrl": "sqlite.jpg",
+    "url": "https://github.com/jaasonw/Database",
+    "demoUrl": ""
+  },
+  {
+    "name": "Graphing Calculator",
+    "description": "A graphing calculator application capable of graphing 2D cartesian equations. Implements the Shunting Yard algorithm to parse and evaluate user inputs",
+    "technology": "C++,SFML",
+    "imageUrl": "graph.jpg",
+    "url": "https://github.com/jaasonw/graphing-calculator",
+    "demoUrl": ""
+  },
+  {
+    "name": "Sushi Shop",
+    "description": "A sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order",
+    "technology": "Java,JavaFx",
+    "imageUrl": "sushi.jpg",
+    "url": "https://github.com/jaasonw/sushi_shop",
+    "demoUrl": ""
+  }
+]

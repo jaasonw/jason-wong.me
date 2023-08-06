@@ -1,8 +1,8 @@
-import About from "$lib/components/v1/About";
-import Contact from "$lib/components/v1/Contact";
-import { Header } from "$lib/components/v1/Header";
-import Projects from "$lib/components/v1/Projects";
-import projects from "$lib/public/projects.json";
+import About from "$lib/v1/components/About";
+import Contact from "$lib/v1/components/Contact";
+import { Header } from "$lib/v1/components/Header";
+import Projects from "$lib/v1/components/Projects";
+import projects from "$lib/v1/projects.json";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";

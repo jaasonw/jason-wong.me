@@ -1,8 +1,8 @@
-import { FadeInOnScroll } from "$lib/components/v1/FadeInOnScroll";
+import { FadeInOnScroll } from "$lib/v1/components/FadeInOnScroll";
 import {
   Project,
   ProjectCard,
-} from "$lib/components/v1/ProjectCard/ProjectCard";
+} from "$lib/v1/components/ProjectCard/ProjectCard";
 
 export default function Projects({ projects }) {
   return (

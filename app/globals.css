@@ -13,5 +13,5 @@ a {
   @apply underline;
   @apply underline-offset-4;
   @apply hover:text-blue-500;
-  @apply dark:hover:text-blue-500;
+  @apply dark:hover:text-blue-400;
 }

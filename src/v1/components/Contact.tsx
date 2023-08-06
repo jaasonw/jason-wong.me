@@ -1,4 +1,4 @@
-import { FadeInOnScroll } from "$lib/components/v1/FadeInOnScroll";
+import { FadeInOnScroll } from "$lib/v1/components/FadeInOnScroll";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -20,7 +20,7 @@
       }
     ],
     "paths": {
-      "$lib/*": ["./*"]
+      "$lib/*": ["./src/*"]
     },
     "strictNullChecks": true
   },
