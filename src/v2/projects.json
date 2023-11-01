@@ -1,11 +1,11 @@
 [
   {
-    "name": "SWEify",
+    "name": "job board",
     "description": "Automatically scrapes job boards to parse and curate job listings for entry level and new grad software engineering positions. ",
     "technology": "Python,Bootstrap,Flask,Spotify API",
     "imageUrl": "sweify.png",
     "url": "https://github.com/jaasonw/sweify",
-    "demoUrl": "https://sweify.vercel.app/"
+    "demoUrl": "https://jobs.physicsbirds.co/"
   },
   {
     "name": "Spotify Seasonal Playlist Sorter",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Pathfinder",
-    "description": "An interactive web app that visualizes pathfinding algorithms to demonstrate performance of various algorithms to better understand their strengths and weaknesses.",
+    "description": "An interactive web app that visualizes pathfinding algorithms.",
     "technology": "Javascript,Svelte",
     "imageUrl": "pathfinder.jpg",
     "url": "https://github.com/jaasonw/pathfinder",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Tic Tac Toe",
-    "description": "A multiplayer Tic-Tac-Toe web app. Implements multiplayer using Pocketbase for game state synchronization between 2 players. Submitted as the final project for my web frontend class. ",
+    "description": "A multiplayer Tic-Tac-Toe web app.",
     "technology": "Javascript,Svelte,Pocketbase",
     "imageUrl": "tictactoe.jpg",
     "url": "https://github.com/jaasonw/tictactoe-spock",
@@ -41,7 +41,7 @@
   },
   {
     "name": "ACM at CSUF Website",
-    "description": "The website for the Association for Computing Machinery chapter at CSUF. Much of my work here is as a maintainer, primarily testing and reviewing pull requests or mentoring any members looking to contribute",
+    "description": "The website for the Association for Computing Machinery chapter at CSUF. I'm primarilly responsible for building the blogging platform and the events page.",
     "technology": "Javascript,Svelte",
     "imageUrl": "acm.jpg",
     "url": "https://github.com/EthanThatOneKid/acmcsuf.com",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Tuffyhacks Website",
-    "description": "A full stack landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
+    "description": "Landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
     "technology": "Javascript,React,PostgreSQL,Firebase",
     "imageUrl": "tuffyhacks.jpg",
     "url": "https://github.com/jaasonw/tuffyhacks.com",
@@ -57,7 +57,7 @@
   },
   {
     "name": "osu! Collection Exporter",
-    "description": "A web app that converts an osu! collections database into a list of beatmap links. Uses an in house made Javascript library to parse beatmap binary data",
+    "description": "A web app that converts an osu! collections database into a list of beatmap links.",
     "technology": "Javascript",
     "imageUrl": "collection_exporter.jpg",
     "url": "https://github.com/jaasonw/osu-collection-exporter",
@@ -65,7 +65,7 @@
   },
   {
     "name": "osu! Stream Speed Benchmark",
-    "description": "The original web based stream speed benchmark. By far my most popular project, topping the Google search results and having 110 upvotes on Reddit",
+    "description": "The original web based stream speed benchmark.",
     "technology": "Javascript, JQuery",
     "imageUrl": "stream_speed.jpg",
     "url": "https://github.com/jaasonw/osuStreamspeed.js",
@@ -73,7 +73,7 @@
   },
   {
     "name": "APPE Regional Draft Analysis",
-    "description": "A program I wrote to run Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
+    "description": "Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
     "technology": "Python",
     "imageUrl": "appe_sim.jpg",
     "url": "https://github.com/jaasonw/appe-simulation",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Graphing Calculator",
-    "description": "A graphing calculator application capable of graphing 2D cartesian equations. Implements the Shunting Yard algorithm to parse and evaluate user inputs",
+    "description": "A graphing calculator application capable of graphing 2D cartesian equations.",
     "technology": "C++,SFML",
     "imageUrl": "graph.jpg",
     "url": "https://github.com/jaasonw/graphing-calculator",

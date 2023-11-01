@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ModeToggle } from "$lib/v2/shadcn/ui/mode-toggle";
 
 export default function NavBar({ className }: { className: string }) {
   const links = [
@@ -24,11 +25,11 @@ export default function NavBar({ className }: { className: string }) {
     },
   ];
   return (
-    <nav className="flex justify-center w-full h-24">
+    <nav className="flex justify-center w-screen h-24">
       <div
         className={`flex items-center justify-end h-full w-full ${className}`}
       >
-        <div className="flex items-center gap-5 ">
+        <div className="flex items-center gap-5">
           {links.map((l) => {
             return (
               <Link href={l.link} className="no-underline" key={l.link}>
@@ -36,6 +37,7 @@ export default function NavBar({ className }: { className: string }) {
               </Link>
             );
           })}
+          <ModeToggle />
         </div>
       </div>
     </nav>
