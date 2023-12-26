@@ -1,5 +1,6 @@
 export const metadata = {
   title: "612190698",
+  description: "612190698",
 };
 export default function Genshin() {
   return (

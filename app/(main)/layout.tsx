@@ -5,12 +5,23 @@ import { ThemeProvider } from "$lib/v2/shadcn/ui/theme-provider";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // import { Inter, Lato } from "next/font/google";
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const iaWriter = localFont({
+  src: [
+    {
+      path: "../font/ia_mono/ia-writer-mono-latin-400-normal.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 
 config.autoAddCss = false;
 
@@ -18,26 +29,36 @@ export const metadata = {
   title: "Jason's Portfolio",
 };
 
-export default function RootLayout({ children }: {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
 }) {
   const width = "max-w-5xl";
   return (
-      <>
-        <html lang="en" className={`${inter.variable} font-sans`} suppressHydrationWarning>
-          <head />
-          <body className="flex flex-col items-center">
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
+    <>
+      <html
+        lang="en"
+        className={`${iaWriter.className} font-sans`}
+        suppressHydrationWarning
+      >
+        <head />
+        <body className="flex flex-col items-center">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <NavBar className={width} />
+            <div
+              className={`flex flex-col justify-center px-3 h-full w-full ${width}`}
             >
-              <NavBar className={width} />
-              <div className={`flex flex-col justify-center px-3 h-full w-full ${width}`}>{children}</div>
-            </ThemeProvider>
-          </body>
-        </html>
-      </>
-    )
-  }
+              {children}
+            </div>
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
+  );
+}
