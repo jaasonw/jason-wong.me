@@ -1,20 +1,19 @@
-"use client"
- 
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
- 
-import { Button } from "$lib/v2/shadcn/ui/button"
+"use client";
+
+import { Button } from "$lib/v2/shadcn/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "$lib/v2/shadcn/ui/dropdown-menu"
+} from "$lib/v2/shadcn/ui/dropdown-menu";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import * as React from "react";
 
 export function ModeToggle() {
-  const { setTheme } = useTheme()
- 
+  const { setTheme } = useTheme();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -36,5 +35,5 @@ export function ModeToggle() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

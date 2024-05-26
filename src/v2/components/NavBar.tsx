@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { ModeToggle } from "$lib/v2/shadcn/ui/mode-toggle";
+import Link from "next/link";
 
 export default function NavBar({ className }: { className: string }) {
   const links = [

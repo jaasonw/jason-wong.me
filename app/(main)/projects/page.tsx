@@ -15,8 +15,12 @@ export default function Projects() {
           // <ProjectCard project={project} key={project.name} />
           <Link key={project.name} href={project.url} className="no-underline">
             <div>
-              <h2 className="scroll-m-20 text-xl font-semibold tracking-tight">{project.name}</h2>
-              <p className="text-sm text-muted-foreground">{project.description}</p>
+              <h2 className="scroll-m-20 text-xl font-semibold tracking-tight">
+                {project.name}
+              </h2>
+              <p className="text-sm text-muted-foreground">
+                {project.description}
+              </p>
             </div>
           </Link>
         ))}
