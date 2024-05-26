@@ -29,9 +29,9 @@ export default function Contact() {
           bill. let's get in touch and discuss your project ideas
         </section>
         <ul className="list-disc list-inside">
-          <li>
+          {/* <li>
             <Link href="mailto:jayywong92@gmail.com">email</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="https://www.linkedin.com/in/wayson/">linkedin</Link>
           </li>
@@ -40,6 +40,9 @@ export default function Contact() {
           </li>
           <li>
             <Link href="http://jason-wong.me/donate">donate</Link>
+          </li>
+          <li>
+            email: jason [at] physicsbirds [dot] dev
           </li>
         </ul>
       </div>
