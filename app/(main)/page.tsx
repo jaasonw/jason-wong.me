@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="flex flex-col justify-center h-[72vh]">
-      <h1 className="text-6xl font-bold">Hi, I'm Jason</h1>
-      <h2 className="text-2xl">I make things that go on the internet</h2>
+      <h1 className="text-6xl font-bold">hi, i'm jason</h1>
+      <h2 className="text-2xl">aspiring baker, wip ccna</h2>
       <h3 className="text-2xl">
-        Read more about me <Link href="/about" className="underline hover:text-blue-500 underline-offset-4">here</Link> or get in touch with
+        check out some of what i do <Link href="/work" className="underline hover:text-blue-500 underline-offset-4">here</Link> or get in touch with
         me <Link href="/contact">here</Link>
       </h3>
     </div>

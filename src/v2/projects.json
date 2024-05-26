@@ -1,106 +1,122 @@
 [
   {
+    "name": "bill splitter",
+    "description": "quickly and easily split bills with friends and generate an itemized receipt for each person.",
+    "technology": "",
+    "imageurl": "",
+    "url": "https://github.com/jaasonw/billsplit",
+    "demourl": "https://billsplit.physicsbirds.dev/"
+  },
+  {
+    "name": "twofivefour",
+    "description": "ai powered coding assistant, think github copilot but worse in every way.",
+    "technology": "python,bootstrap,flask,spotify api",
+    "imageurl": "",
+    "url": "https://github.com/jaasonw/twofivefour",
+    "demourl": "https://jobs.physicsbirds.co/"
+  },
+  {
     "name": "job board",
-    "description": "Automatically scrapes job boards to parse and curate job listings for entry level and new grad software engineering positions. ",
-    "technology": "Python,Bootstrap,Flask,Spotify API",
-    "imageUrl": "sweify.png",
-    "url": "https://github.com/jaasonw/sweify",
-    "demoUrl": "https://jobs.physicsbirds.co/"
+    "description": "automatically scrapes job boards to parse and curate job listings for entry level and new grad software engineering positions. do not accept any fraudulent discord bots.",
+    "technology": "python,bootstrap,flask,spotify api",
+    "imageurl": "",
+    "url": "https://github.com/jaasonw/job-website",
+    "demourl": "https://jobs.physicsbirds.co/"
   },
   {
-    "name": "Spotify Seasonal Playlist Sorter",
-    "description": "A web app that automatically groups songs in a user's Spotify library into playlists based on the current season.",
-    "technology": "Python,Bootstrap,Flask,Spotify API",
-    "imageUrl": "spotify.jpg",
+    "name": "spotify seasonal playlist sorter",
+    "description": "a web app that automatically groups songs in a user's spotify library into playlists based on the current season.",
+    "technology": "python,bootstrap,flask,spotify api",
+    "imageurl": "spotify.jpg",
     "url": "https://github.com/jaasonw/spotify-new-music-sorter",
-    "demoUrl": "http://physicsbirds.duckdns.org/spotify/"
+    "demourl": "http://physicsbirds.duckdns.org/spotify/"
   },
   {
-    "name": "Matrix Visualizer",
-    "description": "An interactive web app allows users to interactively perform row operations on an m x n dimensional matrix with support for symbolic math (CAS)",
-    "technology": "Javascript,Svelte",
-    "imageUrl": "matrix-visualizer.jpg",
-    "url": "https://github.com/jaasonw/matrix-visualizer",
-    "demoUrl": "https://matrix-visualizer.vercel.app/"
+    "name": "matrix visualizer",
+    "description": "an interactive web app allows users to interactively perform row operations on an m x n dimensional matrix with support for symbolic math (cas)",
+    "technology": "javascript,svelte",
+    "imageurl": "matrix-visualizer.jpg",
+    "url": "https://github.com/jaasonw/spotify-seasonal-playlists",
+    "demourl": "https://matrix-visualizer.vercel.app/"
   },
   {
-    "name": "Pathfinder",
-    "description": "An interactive web app that visualizes pathfinding algorithms.",
-    "technology": "Javascript,Svelte",
-    "imageUrl": "pathfinder.jpg",
+    "name": "pathfinder",
+    "description": "an interactive web app that visualizes pathfinding algorithms.",
+    "technology": "javascript,svelte",
+    "imageurl": "pathfinder.jpg",
     "url": "https://github.com/jaasonw/pathfinder",
-    "demoUrl": "https://pathfinder-lake.vercel.app/"
+    "demourl": "https://pathfinder-lake.vercel.app/"
   },
   {
-    "name": "Tic Tac Toe",
-    "description": "A multiplayer Tic-Tac-Toe web app.",
-    "technology": "Javascript,Svelte,Pocketbase",
-    "imageUrl": "tictactoe.jpg",
+    "name": "tic tac toe",
+    "description": "a multiplayer tic-tac-toe web app.",
+    "technology": "javascript,svelte,pocketbase",
+    "imageurl": "tictactoe.jpg",
     "url": "https://github.com/jaasonw/tictactoe-spock",
-    "demoUrl": "https://tictactoe-spock.vercel.app/"
+    "demourl": "https://tictactoe-spock.vercel.app/"
   },
   {
-    "name": "ACM at CSUF Website",
-    "description": "The website for the Association for Computing Machinery chapter at CSUF. I'm primarilly responsible for building the blogging platform and the events page.",
-    "technology": "Javascript,Svelte",
-    "imageUrl": "acm.jpg",
-    "url": "https://github.com/EthanThatOneKid/acmcsuf.com",
-    "demoUrl": "https://acmcsuf.com"
+    "name": "acm at csuf website",
+    "description": "the website for the association for computing machinery chapter at csuf. i'm primarilly responsible for building the blogging platform and the events page.",
+    "technology": "javascript,svelte",
+    "imageurl": "acm.jpg",
+    "url": "https://github.com/ethanthatonekid/acmcsuf.com",
+    "demourl": "https://acmcsuf.com"
   },
   {
-    "name": "Tuffyhacks Website",
-    "description": "Landing page and hacker portal for Tuffyhacks 2022. Supports event scheduling and team creation via invite link.",
-    "technology": "Javascript,React,PostgreSQL,Firebase",
-    "imageUrl": "tuffyhacks.jpg",
+    "name": "tuffyhacks website",
+    "description": "landing page and hacker portal for tuffyhacks 2022. supports event scheduling and team creation via invite link.",
+    "technology": "javascript,react,postgresql,firebase",
+    "imageurl": "tuffyhacks.jpg",
     "url": "https://github.com/jaasonw/tuffyhacks.com",
-    "demoUrl": "https://www.tuffyhacks.com/"
+    "demourl": "https://www.tuffyhacks.com/"
   },
   {
-    "name": "osu! Collection Exporter",
-    "description": "A web app that converts an osu! collections database into a list of beatmap links.",
-    "technology": "Javascript",
-    "imageUrl": "collection_exporter.jpg",
+    "name": "osu! collection exporter",
+    "description": "a web app that converts an osu! collections database into a list of beatmap links.",
+    "technology": "javascript",
+    "imageurl": "collection_exporter.jpg",
     "url": "https://github.com/jaasonw/osu-collection-exporter",
-    "demoUrl": "https://jaasonw.github.io/osu-collection-exporter/"
+    "demourl": "https://jaasonw.github.io/osu-collection-exporter/"
   },
   {
-    "name": "osu! Stream Speed Benchmark",
-    "description": "The original web based stream speed benchmark.",
-    "technology": "Javascript, JQuery",
-    "imageUrl": "stream_speed.jpg",
-    "url": "https://github.com/jaasonw/osuStreamspeed.js",
-    "demoUrl": "https://jaasonw.github.io/osuStreamSpeed.js/"
+    "name": "osu! stream speed benchmark",
+    "description": "the original web based stream speed benchmark.",
+    "technology": "javascript, jquery",
+    "imageurl": "stream_speed.jpg",
+    "url": "https://github.com/jaasonw/osustreamspeed.js",
+    "demourl": "https://jaasonw.github.io/osustreamspeed.js/"
   },
   {
-    "name": "APPE Regional Draft Analysis",
-    "description": "Monte Carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their Advanced Pharmacy Practice Experiences (APPE) rotations",
-    "technology": "Python",
-    "imageUrl": "appe_sim.jpg",
+    "name": "appe regional draft analysis",
+    "description": "monte carlo draft pick simulations to forecast the probability of pharmacy students getting their preferred region for their advanced pharmacy practice experiences (appe) rotations",
+    "technology": "python",
+    "imageurl": "appe_sim.jpg",
     "url": "https://github.com/jaasonw/appe-simulation",
-    "demoUrl": ""
+    "demourl": ""
   },
   {
-    "name": "SQLite Clone",
-    "description": "A clone of SQLite supporting a small subset of SQL commands as well as fully featured syntax checking and an extensible command system. Implements a B+tree for indexing",
-    "technology": "C++",
-    "imageUrl": "sqlite.jpg",
-    "url": "https://github.com/jaasonw/Database",
-    "demoUrl": ""
+    "name": "sqlite clone",
+    "description": "a clone of sqlite supporting a small subset of sql commands as well as fully featured syntax checking and an extensible command system. implements a b+tree for indexing",
+    "technology": "c++",
+    "imageurl": "sqlite.jpg",
+    "url": "https://github.com/jaasonw/database",
+    "demourl": ""
   },
   {
-    "name": "Graphing Calculator",
-    "description": "A graphing calculator application capable of graphing 2D cartesian equations.",
-    "technology": "C++,SFML",
-    "imageUrl": "graph.jpg",
+    "name": "graphing calculator",
+    "description": "a graphing calculator application capable of graphing 2d cartesian equations.",
+    "technology": "c++,sfml",
+    "imageurl": "graph.jpg",
     "url": "https://github.com/jaasonw/graphing-calculator",
-    "demoUrl": ""
+    "demourl": ""
   },
   {
-    "name": "Sushi Shop",
-    "description": "A sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order",
-    "technology": "Java,JavaFx",
-    "imageUrl": "sushi.jpg",
+    "name": "sushi shop",
+    "description": "a sushi making game where players are given a randomized sushi order and must move a plate to catch falling ingredients to construct the order",
+    "technology": "java,javafx",
+    "imageurl": "sushi.jpg",
     "url": "https://github.com/jaasonw/sushi_shop",
-    "demoUrl": ""
+    "demourl": ""
   }
 ]

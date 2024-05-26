@@ -4,23 +4,27 @@ import { ModeToggle } from "$lib/v2/shadcn/ui/mode-toggle";
 export default function NavBar({ className }: { className: string }) {
   const links = [
     {
-      name: "Home",
+      name: "home",
       link: "/",
     },
     // {
     //   name: "Blog",
     //   link: "https://blog.jason-wong.me",
     // },
+    // {
+    //   name: "About",
+    //   link: "/about",
+    // },
     {
-      name: "About",
-      link: "/about",
+      name: "work",
+      link: "/work",
     },
     {
-      name: "Projects",
+      name: "projects",
       link: "/projects",
     },
     {
-      name: "Contact",
+      name: "contact",
       link: "/contact",
     },
   ];

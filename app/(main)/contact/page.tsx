@@ -20,24 +20,26 @@ function SkillBadge({
 export default function Contact() {
   return (
     <div className="flex flex-col gap-2 h-full">
-      <h1 className="text-6xl font-bold">Contact</h1>
+      <h1 className="text-6xl font-bold">contact</h1>
       <hr></hr>
       <div className="flex flex-col text-lg gap-5">
         <section>
-          Interested in hiring me or have an idea to pitch? I'm currently open
-          to work as a frontend developer and looking for opportunities to
-          diversify my portfolio. Let's get in touch and discuss your project
-          ideas.
+          interested in hiring me or have an idea to pitch? currently not
+          looking for work but open to hearing your proposals if it fits the
+          bill. let's get in touch and discuss your project ideas
         </section>
         <ul className="list-disc list-inside">
           <li>
-            <Link href="mailto:jayywong92@gmail.com">Email</Link>
+            <Link href="mailto:jayywong92@gmail.com">email</Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/wayson/">LinkedIn</Link>
+            <Link href="https://www.linkedin.com/in/wayson/">linkedin</Link>
           </li>
           <li>
-            <Link href="http://jason-wong.me/meeting">Calendly</Link>
+            <Link href="http://jason-wong.me/meeting">calendly</Link>
+          </li>
+          <li>
+            <Link href="http://jason-wong.me/donate">donate</Link>
           </li>
         </ul>
       </div>

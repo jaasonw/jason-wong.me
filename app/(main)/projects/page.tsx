@@ -5,10 +5,10 @@ import projects from "$lib/v2/projects.json";
 import Link from "next/link";
 
 export default function Projects() {
-  const projectList = projects as Project[];
+  const projectList = projects as unknown as Project[];
   return (
     <div className="flex flex-col gap-2 h-full">
-      <h1 className="text-6xl font-bold">Projects</h1>
+      <h1 className="text-6xl font-bold">projects</h1>
       <hr></hr>
       <div className="flex flex-col gap-5 group">
         {projectList.map((project) => (
