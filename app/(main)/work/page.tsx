@@ -54,7 +54,7 @@ export default function works() {
               <span className="text-lg font-bold">
                 fullyhacks (formerly tuffyhacks)
               </span>{" "}
-              @ califoria state university, fullerton
+              @ california state university, fullerton
             </li>
             <li>
               <span className="text-lg font-bold">she.codes</span> @ pasadena
