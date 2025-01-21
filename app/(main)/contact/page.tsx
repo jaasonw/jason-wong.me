@@ -42,7 +42,7 @@ export default function Contact() {
             <Link href="http://jason-wong.me/donate">donate</Link>
           </li>
           <li>
-            email: jason [at] physicsbirds [dot] dev
+            email: hi [at] jasonw [dot] me
           </li>
         </ul>
       </div>
