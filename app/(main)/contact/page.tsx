@@ -33,6 +33,9 @@ export default function Contact() {
             <Link href="mailto:jayywong92@gmail.com">email</Link>
           </li> */}
           <li>
+            <Link href="http://jason-wong.me/github">github</Link>
+          </li>
+          <li>
             <Link href="https://www.linkedin.com/in/wayson/">linkedin</Link>
           </li>
           <li>
