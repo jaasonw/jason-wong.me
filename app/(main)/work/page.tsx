@@ -24,6 +24,12 @@ export default function works() {
               - it helpdesk technician
             </li>
             <li>
+              <span className="text-lg font-bold">
+                independent it consulting
+              </span>{" "}
+              - self employed
+            </li>
+            <li>
               <span className="text-lg font-bold">amazon</span> - software
               development engineer intern, personalization team
             </li>
