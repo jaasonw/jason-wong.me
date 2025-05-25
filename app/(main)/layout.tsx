@@ -1,17 +1,9 @@
-import Blob from "$lib/v2/components/Blob";
-import Footer from "$lib/v2/components/Footer";
 import NavBar from "$lib/v2/components/NavBar";
 import { ThemeProvider } from "$lib/v2/shadcn/ui/theme-provider";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-// import { Inter, Lato } from "next/font/google";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 const iaWriter = localFont({
   src: [
