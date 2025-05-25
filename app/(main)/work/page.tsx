@@ -19,7 +19,7 @@ export default function works() {
           <ul>
             <li>
               <span className="text-lg font-bold">
-                f&a federal credit union
+                f&a credit union
               </span>{" "}
               - it helpdesk technician
             </li>
