@@ -7,14 +7,6 @@ export default function NavBar({ className }: { className: string }) {
       name: "home",
       link: "/",
     },
-    // {
-    //   name: "Blog",
-    //   link: "https://blog.jason-wong.me",
-    // },
-    // {
-    //   name: "About",
-    //   link: "/about",
-    // },
     {
       name: "work",
       link: "/work",
@@ -29,7 +21,7 @@ export default function NavBar({ className }: { className: string }) {
     },
     {
       name: "blog",
-      link: "https://blog.jason-wong.me",
+      link: "https://blog.jasonw.me",
     },
   ];
   return (
