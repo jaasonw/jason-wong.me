@@ -27,6 +27,10 @@ export default function NavBar({ className }: { className: string }) {
       name: "contact",
       link: "/contact",
     },
+    {
+      name: "blog",
+      link: "https://blog.jason-wong.me",
+    },
   ];
   return (
     <nav className="flex justify-center w-screen h-24">

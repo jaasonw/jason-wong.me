@@ -70,7 +70,8 @@ module.exports = {
       },
       {
         source: "/venmo",
-        destination: "https://venmo.com/code?user_id=2440537361612800300&created=1657495186",
+        destination:
+          "https://venmo.com/code?user_id=2440537361612800300&created=1657495186",
         permanent: true,
       },
       {
@@ -81,6 +82,16 @@ module.exports = {
       {
         source: "/meeting",
         destination: "https://calendly.com/wayson",
+        permanent: true,
+      },
+      {
+        source: "/threads",
+        destination: "https://www.threads.com/@realwayson",
+        permanent: true,
+      },
+      {
+        source: "/bluesky",
+        destination: "https://bsky.app/profile/jasonw.me",
         permanent: true,
       },
     ];

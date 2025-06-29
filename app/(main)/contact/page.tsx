@@ -44,9 +44,7 @@ export default function Contact() {
           <li>
             <Link href="http://jason-wong.me/donate">donate</Link>
           </li>
-          <li>
-            email: hi [at] jasonw [dot] me
-          </li>
+          <li>email: hi [at] jasonw [dot] me</li>
         </ul>
       </div>
     </div>

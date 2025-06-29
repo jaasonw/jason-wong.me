@@ -18,10 +18,8 @@ export default function works() {
           <h2 className="text-2xl font-bold">work</h2>
           <ul>
             <li>
-              <span className="text-lg font-bold">
-                f&a credit union
-              </span>{" "}
-              - it helpdesk
+              <span className="text-lg font-bold">f&a credit union</span> - it
+              helpdesk
             </li>
             <li>
               <span className="text-lg font-bold">

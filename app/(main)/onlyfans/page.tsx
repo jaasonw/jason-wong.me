@@ -1,11 +1,12 @@
-"use client"
-import Head from 'next/head'
-import { useEffect } from 'react'
+"use client";
+
+import Head from "next/head";
+import { useEffect } from "react";
 
 export default function OnlyFans() {
   useEffect(() => {
-    window.location.href = 'https://gethelp.com/about/'
-  }, [])
+    window.location.href = "https://gethelp.com/about/";
+  }, []);
   return (
     <>
       <Head>
@@ -17,5 +18,5 @@ export default function OnlyFans() {
       </Head>
       <div>Redirecting...</div>
     </>
-  )
+  );
 }
