@@ -98,7 +98,7 @@ export default function works() {
           <ul>
             <li>
               <span className="text-lg font-bold">
-                cisco certified network professional (ccnp)
+                cisco certified network associate (ccna)
               </span>{" "}
               - in progress
             </li>
