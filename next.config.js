@@ -3,9 +3,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   async redirects() {
     return [
       {
@@ -76,7 +73,7 @@ module.exports = {
       },
       {
         source: "/zelle",
-        destination: "./zelle.png",
+        destination: "/zelle.jpg",
         permanent: true,
       },
       {

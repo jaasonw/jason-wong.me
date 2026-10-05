@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import styles from "./ProjectCard.module.css";
-
 export interface Project {
   name: string;
   description: string;
@@ -15,9 +13,9 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <a
       href={project.url}
-      className="flex flex-col gap-2 transition group-hover:opacity-60 hover:!opacity-100 no-underline hover:cursor-pointer hover:!text-inherit group/link"
+      className="flex flex-col gap-2 transition group-hover:opacity-60 hover:opacity-100! no-underline hover:cursor-pointer hover:text-inherit! group/link"
     >
-      <div className="flex flex-col sm:flex-row gap-2 border border-slate-100 border-opacity-0 rounded-md group/card bg-slate-100 bg-opacity-0 hover:bg-opacity-5 hover:border-opacity-10 hover:shadow-md">
+      <div className="flex flex-col sm:flex-row gap-2 border border-slate-100/0 rounded-md group/card bg-slate-100/0 hover:bg-slate-100/5 hover:border-slate-100/10 hover:shadow-md">
         <Image
           className="aspect-video rounded-l-md"
           src={project.imageUrl}
